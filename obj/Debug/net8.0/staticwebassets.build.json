@@ -1,28 +1,28 @@
 {
   "Version": 1,
-  "Hash": "GPq6PkbGFno2ut+o48iJ6YJyvFQ6jbuZSLEEBKfKwjQ=",
-  "Source": "GECPATAN_FACULTY_PORTAL",
-  "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+  "Hash": "o6Uicrj+bA5XHF0rtZMEs94+1MuIdQssqZKCGDn7x7U=",
+  "Source": "GECPATAN FACULTY PORTAL",
+  "BasePath": "_content/GECPATAN FACULTY PORTAL",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "GECPATAN_FACULTY_PORTAL\\wwwroot",
-      "Source": "GECPATAN_FACULTY_PORTAL",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "Name": "GECPATAN FACULTY PORTAL\\wwwroot",
+      "Source": "GECPATAN FACULTY PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GECPATAN_FACULTY_PORTAL.styles.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GECPATAN FACULTY PORTAL.styles.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
-      "RelativePath": "GECPATAN_FACULTY_PORTAL#[.{fingerprint}]?.styles.css",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
+      "RelativePath": "GECPATAN FACULTY PORTAL#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -31,19 +31,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "lkk3y9mcvx",
-      "Integrity": "G+98T1hrmb+URQ8dZQ+UOT1F8tw8Cb2v6hd3ld0rC6Y=",
+      "Fingerprint": "dkltdzccqw",
+      "Integrity": "k5R/Ttkpyr3/mU2DwCbm1h6iE/Y21/k+uJFKOZU8DuA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GECPATAN_FACULTY_PORTAL.styles.css"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GECPATAN FACULTY PORTAL.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GECPATAN_FACULTY_PORTAL.bundle.scp.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GECPATAN FACULTY PORTAL.bundle.scp.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
-      "RelativePath": "GECPATAN_FACULTY_PORTAL#[.{fingerprint}]!.bundle.scp.css",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
+      "RelativePath": "GECPATAN FACULTY PORTAL#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -52,18 +52,39 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "lkk3y9mcvx",
-      "Integrity": "G+98T1hrmb+URQ8dZQ+UOT1F8tw8Cb2v6hd3ld0rC6Y=",
+      "Fingerprint": "dkltdzccqw",
+      "Integrity": "k5R/Ttkpyr3/mU2DwCbm1h6iE/Y21/k+uJFKOZU8DuA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GECPATAN_FACULTY_PORTAL.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GECPATAN FACULTY PORTAL.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\css\\site.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\css\\Custom.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
+      "RelativePath": "css/Custom#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rh35fdk35c",
+      "Integrity": "72MrXbSAhgoKrWqEpjSlB4mBjCRjXHUTIF5WQRUMW58=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Custom.css"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\css\\site.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -80,11 +101,11 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\favicon.ico",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\favicon.ico",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -101,11 +122,53 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\js\\site.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\Images\\Gecpatan.jpg",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
+      "RelativePath": "Images/Gecpatan#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0qeb529kxs",
+      "Integrity": "SBzDDyNOXxhb4T5b6on2XLyAFF3e5mbHJG/2EmXyUmU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Gecpatan.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\Images\\Gecpatan.png",
+      "SourceId": "GECPATAN FACULTY PORTAL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
+      "RelativePath": "Images/Gecpatan#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vhab7sc2ng",
+      "Integrity": "HV/irvYmNnajXooodiAExZOMfTxH2Plqv0DvUGPfF6k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Gecpatan.png"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\js\\site.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -122,11 +185,11 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -143,11 +206,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -164,11 +227,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -185,11 +248,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -206,11 +269,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -227,11 +290,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -248,11 +311,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -269,11 +332,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -290,11 +353,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -311,11 +374,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -332,11 +395,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -353,11 +416,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -374,11 +437,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -395,11 +458,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -416,11 +479,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -437,11 +500,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -458,11 +521,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -479,11 +542,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -500,11 +563,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -521,11 +584,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -542,11 +605,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -563,11 +626,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -584,11 +647,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -605,11 +668,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -626,11 +689,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -647,11 +710,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -668,11 +731,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -689,11 +752,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -710,11 +773,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -731,11 +794,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -752,11 +815,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -773,11 +836,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -794,11 +857,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -815,11 +878,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -836,11 +899,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -857,11 +920,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -878,11 +941,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -899,11 +962,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -920,11 +983,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -941,11 +1004,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -962,11 +1025,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -983,11 +1046,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1004,11 +1067,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1025,11 +1088,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1046,11 +1109,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1067,11 +1130,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1088,11 +1151,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1109,11 +1172,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1130,11 +1193,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1151,11 +1214,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1172,11 +1235,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1193,11 +1256,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1214,11 +1277,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1235,11 +1298,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1256,11 +1319,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1277,11 +1340,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1298,11 +1361,11 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "SourceId": "GECPATAN_FACULTY_PORTAL",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "SourceId": "GECPATAN FACULTY PORTAL",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\",
-      "BasePath": "_content/GECPATAN_FACULTY_PORTAL",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\",
+      "BasePath": "_content/GECPATAN FACULTY PORTAL",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1321,8 +1384,90 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/Custom.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\css\\Custom.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1703"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72MrXbSAhgoKrWqEpjSlB4mBjCRjXHUTIF5WQRUMW58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 14:17:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-72MrXbSAhgoKrWqEpjSlB4mBjCRjXHUTIF5WQRUMW58="
+        }
+      ]
+    },
+    {
+      "Route": "css/Custom.rh35fdk35c.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\css\\Custom.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1703"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72MrXbSAhgoKrWqEpjSlB4mBjCRjXHUTIF5WQRUMW58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 14:17:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rh35fdk35c"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Custom.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-72MrXbSAhgoKrWqEpjSlB4mBjCRjXHUTIF5WQRUMW58="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1343,7 +1488,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1367,7 +1512,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1388,7 +1533,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1404,7 +1549,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1425,7 +1570,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1449,7 +1594,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1470,7 +1615,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1485,8 +1630,8 @@
       ]
     },
     {
-      "Route": "GECPATAN_FACULTY_PORTAL.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GECPATAN_FACULTY_PORTAL.bundle.scp.css",
+      "Route": "GECPATAN FACULTY PORTAL.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GECPATAN FACULTY PORTAL.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1503,11 +1648,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"G+98T1hrmb+URQ8dZQ+UOT1F8tw8Cb2v6hd3ld0rC6Y=\""
+          "Value": "\"k5R/Ttkpyr3/mU2DwCbm1h6iE/Y21/k+uJFKOZU8DuA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:39:02 GMT"
+          "Value": "Fri, 23 May 2025 14:12:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1517,13 +1662,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-G+98T1hrmb+URQ8dZQ+UOT1F8tw8Cb2v6hd3ld0rC6Y="
+          "Value": "sha256-k5R/Ttkpyr3/mU2DwCbm1h6iE/Y21/k+uJFKOZU8DuA="
         }
       ]
     },
     {
-      "Route": "GECPATAN_FACULTY_PORTAL.lkk3y9mcvx.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GECPATAN_FACULTY_PORTAL.bundle.scp.css",
+      "Route": "GECPATAN FACULTY PORTAL.dkltdzccqw.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GECPATAN FACULTY PORTAL.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1540,11 +1685,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"G+98T1hrmb+URQ8dZQ+UOT1F8tw8Cb2v6hd3ld0rC6Y=\""
+          "Value": "\"k5R/Ttkpyr3/mU2DwCbm1h6iE/Y21/k+uJFKOZU8DuA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:39:02 GMT"
+          "Value": "Fri, 23 May 2025 14:12:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1554,21 +1699,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lkk3y9mcvx"
+          "Value": "dkltdzccqw"
         },
         {
           "Name": "label",
-          "Value": "GECPATAN_FACULTY_PORTAL.bundle.scp.css"
+          "Value": "GECPATAN FACULTY PORTAL.bundle.scp.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-G+98T1hrmb+URQ8dZQ+UOT1F8tw8Cb2v6hd3ld0rC6Y="
+          "Value": "sha256-k5R/Ttkpyr3/mU2DwCbm1h6iE/Y21/k+uJFKOZU8DuA="
         }
       ]
     },
     {
-      "Route": "GECPATAN_FACULTY_PORTAL.lkk3y9mcvx.styles.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GECPATAN_FACULTY_PORTAL.styles.css",
+      "Route": "GECPATAN FACULTY PORTAL.dkltdzccqw.styles.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GECPATAN FACULTY PORTAL.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1585,11 +1730,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"G+98T1hrmb+URQ8dZQ+UOT1F8tw8Cb2v6hd3ld0rC6Y=\""
+          "Value": "\"k5R/Ttkpyr3/mU2DwCbm1h6iE/Y21/k+uJFKOZU8DuA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:39:02 GMT"
+          "Value": "Fri, 23 May 2025 14:12:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1599,21 +1744,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lkk3y9mcvx"
+          "Value": "dkltdzccqw"
         },
         {
           "Name": "label",
-          "Value": "GECPATAN_FACULTY_PORTAL.styles.css"
+          "Value": "GECPATAN FACULTY PORTAL.styles.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-G+98T1hrmb+URQ8dZQ+UOT1F8tw8Cb2v6hd3ld0rC6Y="
+          "Value": "sha256-k5R/Ttkpyr3/mU2DwCbm1h6iE/Y21/k+uJFKOZU8DuA="
         }
       ]
     },
     {
-      "Route": "GECPATAN_FACULTY_PORTAL.styles.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GECPATAN_FACULTY_PORTAL.styles.css",
+      "Route": "GECPATAN FACULTY PORTAL.styles.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GECPATAN FACULTY PORTAL.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1630,11 +1775,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"G+98T1hrmb+URQ8dZQ+UOT1F8tw8Cb2v6hd3ld0rC6Y=\""
+          "Value": "\"k5R/Ttkpyr3/mU2DwCbm1h6iE/Y21/k+uJFKOZU8DuA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:39:02 GMT"
+          "Value": "Fri, 23 May 2025 14:12:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1644,13 +1789,177 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-G+98T1hrmb+URQ8dZQ+UOT1F8tw8Cb2v6hd3ld0rC6Y="
+          "Value": "sha256-k5R/Ttkpyr3/mU2DwCbm1h6iE/Y21/k+uJFKOZU8DuA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Gecpatan.0qeb529kxs.jpg",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\Images\\Gecpatan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "189890"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SBzDDyNOXxhb4T5b6on2XLyAFF3e5mbHJG/2EmXyUmU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 08:58:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qeb529kxs"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Gecpatan.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SBzDDyNOXxhb4T5b6on2XLyAFF3e5mbHJG/2EmXyUmU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Gecpatan.jpg",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\Images\\Gecpatan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "189890"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SBzDDyNOXxhb4T5b6on2XLyAFF3e5mbHJG/2EmXyUmU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 08:58:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SBzDDyNOXxhb4T5b6on2XLyAFF3e5mbHJG/2EmXyUmU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Gecpatan.png",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\Images\\Gecpatan.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2864876"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HV/irvYmNnajXooodiAExZOMfTxH2Plqv0DvUGPfF6k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 11:45:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HV/irvYmNnajXooodiAExZOMfTxH2Plqv0DvUGPfF6k="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Gecpatan.vhab7sc2ng.png",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\Images\\Gecpatan.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2864876"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HV/irvYmNnajXooodiAExZOMfTxH2Plqv0DvUGPfF6k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 11:45:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vhab7sc2ng"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Gecpatan.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HV/irvYmNnajXooodiAExZOMfTxH2Plqv0DvUGPfF6k="
         }
       ]
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1671,7 +1980,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1687,7 +1996,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1708,7 +2017,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1732,7 +2041,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1753,7 +2062,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1769,7 +2078,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1790,7 +2099,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1814,7 +2123,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1835,7 +2144,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1851,7 +2160,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1872,7 +2181,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1896,7 +2205,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1917,7 +2226,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1933,7 +2242,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1954,7 +2263,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1978,7 +2287,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1999,7 +2308,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2015,7 +2324,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2036,7 +2345,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2060,7 +2369,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2081,7 +2390,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2097,7 +2406,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2118,7 +2427,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2142,7 +2451,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2163,7 +2472,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2179,7 +2488,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.9b9oa1qrmt.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2200,7 +2509,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2224,7 +2533,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2245,7 +2554,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2261,7 +2570,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2282,7 +2591,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2306,7 +2615,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2327,7 +2636,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2343,7 +2652,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ve6x09088i.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2364,7 +2673,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2388,7 +2697,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2409,7 +2718,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2433,7 +2742,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2454,7 +2763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2470,7 +2779,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2491,7 +2800,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2507,7 +2816,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2528,7 +2837,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2552,7 +2861,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2573,7 +2882,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2589,7 +2898,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2610,7 +2919,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2634,7 +2943,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2655,7 +2964,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2671,7 +2980,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.unj9p35syc.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2692,7 +3001,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2716,7 +3025,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2737,7 +3046,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2753,7 +3062,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2774,7 +3083,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2798,7 +3107,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2819,7 +3128,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2835,7 +3144,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2856,7 +3165,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2872,7 +3181,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2893,7 +3202,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2909,7 +3218,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2930,7 +3239,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2954,7 +3263,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.n1oizzvkh6.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2975,7 +3284,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2999,7 +3308,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.q2ku51ktnl.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3020,7 +3329,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3044,7 +3353,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3065,7 +3374,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3089,7 +3398,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3110,7 +3419,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3126,7 +3435,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3147,7 +3456,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3171,7 +3480,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3192,7 +3501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3208,7 +3517,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3229,7 +3538,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3245,7 +3554,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3266,7 +3575,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3282,7 +3591,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3303,7 +3612,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3327,7 +3636,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.f8imaxxbri.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3348,7 +3657,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3372,7 +3681,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.0wve5yxp74.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3393,7 +3702,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3417,7 +3726,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3438,7 +3747,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3454,7 +3763,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3475,7 +3784,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3499,7 +3808,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3520,7 +3829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3536,7 +3845,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3557,7 +3866,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3573,7 +3882,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3594,7 +3903,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3610,7 +3919,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3631,7 +3940,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3655,7 +3964,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.npxfuf8dg6.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3676,7 +3985,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3700,7 +4009,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3721,7 +4030,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3737,7 +4046,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3758,7 +4067,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3782,7 +4091,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3803,7 +4112,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3819,7 +4128,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.16095smhkz.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3840,7 +4149,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3864,7 +4173,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3885,7 +4194,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3901,7 +4210,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3922,7 +4231,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3938,7 +4247,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3959,7 +4268,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3983,7 +4292,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.b4skse8du6.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4004,7 +4313,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4028,7 +4337,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4049,7 +4358,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4065,7 +4374,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4086,7 +4395,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4110,7 +4419,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4131,7 +4440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4147,7 +4456,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4168,7 +4477,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4184,7 +4493,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4205,7 +4514,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4229,7 +4538,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4250,7 +4559,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4266,7 +4575,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.u3xrusw2ol.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4287,7 +4596,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4311,7 +4620,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.tey0rigmnh.css",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4332,7 +4641,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4356,7 +4665,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4377,7 +4686,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4393,7 +4702,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4414,7 +4723,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4438,7 +4747,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4459,7 +4768,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4475,7 +4784,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.l2av4jpuoj.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4496,7 +4805,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4520,7 +4829,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.25iw1kog22.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4541,7 +4850,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4565,7 +4874,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4586,7 +4895,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4602,7 +4911,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4623,7 +4932,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4647,7 +4956,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4668,7 +4977,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4684,7 +4993,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4705,7 +5014,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4721,7 +5030,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4742,7 +5051,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4766,7 +5075,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4787,7 +5096,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4803,7 +5112,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.m39kt2b5c9.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4824,7 +5133,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4848,7 +5157,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4869,7 +5178,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4885,7 +5194,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4906,7 +5215,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4922,7 +5231,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4943,7 +5252,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4967,7 +5276,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.um2aeqy4ik.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4988,7 +5297,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5012,7 +5321,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5033,7 +5342,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5049,7 +5358,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5070,7 +5379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5094,7 +5403,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5115,7 +5424,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5131,7 +5440,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5152,7 +5461,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5168,7 +5477,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5189,7 +5498,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5205,7 +5514,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5226,7 +5535,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5250,7 +5559,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.zwph15dxgs.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5271,7 +5580,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5295,7 +5604,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.o4kw7cc6tf.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5316,7 +5625,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5340,7 +5649,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5361,7 +5670,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5377,7 +5686,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5398,7 +5707,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5422,7 +5731,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.fwhahm2icz.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5443,7 +5752,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5467,7 +5776,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5488,7 +5797,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5504,7 +5813,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5525,7 +5834,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5549,7 +5858,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.dd6z7egasc.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5570,7 +5879,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5594,7 +5903,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5615,7 +5924,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5631,7 +5940,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5652,7 +5961,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5668,7 +5977,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5689,7 +5998,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5713,7 +6022,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5734,7 +6043,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5750,7 +6059,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5771,7 +6080,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5795,7 +6104,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5816,7 +6125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5832,7 +6141,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5853,7 +6162,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5877,7 +6186,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5898,7 +6207,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5914,7 +6223,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5935,7 +6244,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5951,7 +6260,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5972,7 +6281,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5996,7 +6305,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6017,7 +6326,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6033,7 +6342,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.pzqfkb6aqo.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6054,7 +6363,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6078,7 +6387,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6099,7 +6408,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6115,7 +6424,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6136,7 +6445,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6160,7 +6469,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6181,7 +6490,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6205,7 +6514,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6226,7 +6535,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6242,7 +6551,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6263,7 +6572,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6287,7 +6596,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6308,7 +6617,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6324,7 +6633,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6345,7 +6654,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6369,7 +6678,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN_FACULTY_PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\GECPATAN FACULTY PORTAL\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6390,7 +6699,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 00:38:48 GMT"
+          "Value": "Fri, 23 May 2025 14:12:33 GMT"
         },
         {
           "Name": "Cache-Control",

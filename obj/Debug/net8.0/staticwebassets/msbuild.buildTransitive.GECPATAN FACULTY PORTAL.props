@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\GECPATAN FACULTY PORTAL.props" />
+</Project>

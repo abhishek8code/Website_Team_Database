@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GECPATAN FACULTY PORTAL.props" />
+</Project>

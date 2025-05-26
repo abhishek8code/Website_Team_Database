@@ -1,0 +1,53 @@
+﻿@using GECPATAN_FACULTY_PORTAL.Data;
+@using GECPATAN_FACULTY_PORTAL.ViewModels;
+@model LoginVM
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+<link rel="stylesheet" href="~/css/Custom.css" />
+<div class="auth-container">
+    <h1 class="auth-title">GECP
+        Faculty Portal</h1>
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger">
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <p>@error.ErrorMessage</p>
+            }
+        </div>
+    }
+
+    <form asp-action="Login" method="post">
+        <div class="form-group">
+            <label asp-for="Role">Select Role</label>
+            <select asp-for="Role" class="form-control">
+                <option value="">-- Select Role --</option>
+                <option value="SuperAdmin">Super Admin</option>        
+            </select>
+            <span asp-validation-for="Role" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email">Email Address</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Password">Password</label>
+            <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="auth-btn">Login</button>
+
+         <p>Don't have an account? <a href="@Url.Action("Register", "Account")">Register here</a></p>
+        <a asp-controller="Account" asp-action="VerifyEmail" class="text-decoration-none">
+                Forgot password?
+            </a>
+    </form>
+</div> 
