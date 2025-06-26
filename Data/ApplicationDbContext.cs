@@ -10,5 +10,7 @@ namespace GECPATAN_FACULTY_PORTAL.Data
             : base(options)
         {
         }
+
+        public DbSet<GECPATAN_FACULTY_PORTAL.Models.FacultyMember> FacultyMember { get; set; } = default!;
     }
 }

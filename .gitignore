@@ -1,0 +1,53 @@
+# Build results
+bin/
+obj/
+out/
+bin\
+obj\
+out\
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Database files (local only)
+*.mdf
+*.ldf
+*.ndf
+*.bak
+*.db
+*.dll
+
+# Visual Studio
+.vs/
+.vscode/
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+
+# Entity Framework
+# (IMPORTANT: DO NOT ignore the Migrations folder itself!)
+# Ignore if generated in wrong location accidentally:
+Migrations/bin/
+Migrations/obj/
+
+# Others
+*.cache
+*.zip
+*.7z
+*.tar
+*.gz
+*.DS_Store
