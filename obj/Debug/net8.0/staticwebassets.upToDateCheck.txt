@@ -1854,6 +1854,7 @@ wwwroot\adminlte\plugins\toastr\toastr.css
 wwwroot\adminlte\plugins\toastr\toastr.js.map
 wwwroot\adminlte\plugins\toastr\toastr.min.css
 wwwroot\adminlte\plugins\toastr\toastr.min.js
+wwwroot\css\Custom.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js

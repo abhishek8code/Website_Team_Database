@@ -1,0 +1,39 @@
+@model IEnumerable<GECPATAN_FACULTY_PORTAL.Models.Department.Department>
+
+@{
+    ViewData["Title"] = "Department List";
+}
+
+<h2>Department List</h2>
+
+<p><a asp-action="Create" class="btn btn-primary">Create New</a></p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Slogan</th>
+            <th>Tagline</th>
+            <th>About</th>
+            <th>ShowIntake</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Slogan</td>
+            <td>@item.Tagline</td>
+            <td>@item.About</td>
+            <td>@item.ShowIntake</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

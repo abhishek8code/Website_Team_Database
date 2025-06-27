@@ -1,0 +1,17 @@
+@model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentMission
+
+@{
+    ViewData["Title"] = "Create DepartmentMission";
+}
+
+<h2>Create DepartmentMission</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="MissionText"></label>
+        <input asp-for="MissionText" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Create</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

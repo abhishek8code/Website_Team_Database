@@ -1,0 +1,21 @@
+@model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentIntake
+
+@{
+    ViewData["Title"] = "Create DepartmentIntake";
+}
+
+<h2>Create DepartmentIntake</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="IntakeCount"></label>
+        <input asp-for="IntakeCount" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="IntakeYear"></label>
+        <input asp-for="IntakeYear" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Create</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

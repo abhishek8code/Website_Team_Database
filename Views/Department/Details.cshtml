@@ -1,0 +1,18 @@
+@model GECPATAN_FACULTY_PORTAL.Models.Department.Department
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Department Details</h2>
+<table class="table">
+    <tr><th>Name</th><td>@Model.Name</td></tr>
+    <tr><th>Slogan</th><td>@Model.Slogan</td></tr>
+    <tr><th>Tagline</th><td>@Model.Tagline</td></tr>
+    <tr><th>About</th><td>@Model.About</td></tr>
+    <tr><th>Created By</th><td>@Model.CreatedBy</td></tr>
+</table>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</div>
