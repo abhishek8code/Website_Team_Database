@@ -1,17 +1,28 @@
 @model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentMission
 
 @{
-    ViewData["Title"] = "Create DepartmentMission";
+    ViewData["Title"] = "Add Mission";
 }
 
-<h2>Create DepartmentMission</h2>
+<h4>Add Mission Statement</h4>
+<hr />
 
-<form asp-action="Create">
+<form asp-action="AddMission" method="post">
+    <input type="hidden" asp-for="DeptId" />
+
     <div class="form-group">
-        <label asp-for="MissionText"></label>
-        <input asp-for="MissionText" class="form-control" />
+        <label asp-for="MissionText" class="control-label">Mission Text</label>
+        <textarea asp-for="MissionText" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="MissionText" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-success">Create</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    <br />
+    <button type="submit" class="btn btn-primary">Add</button>
+    <a asp-action="DepartmentMissions" asp-route-departmentId="@Model.DeptId" class="btn btn-secondary">Cancel</a>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

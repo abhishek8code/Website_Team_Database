@@ -19,9 +19,7 @@ public partial class Department
 
     public string? About { get; set; }
 
-    public bool? ShowIntake { get; set; }
-
-    public bool? IsDeleted { get; set; }
+    public bool ShowIntake { get; set; }
 
     public DateTime? CreatedDate { get; set; }
 
@@ -35,13 +33,8 @@ public partial class Department
 
     public string? UpdatedBy { get; set; }
 
-    public virtual ICollection<DepartmentIntake> DepartmentIntake { get; set; } = new List<DepartmentIntake>();
-
-//    public virtual ICollection<DepartmentLabs> DepartmentLabs { get; set; } = new List<DepartmentLabs>();
-
-    public virtual ICollection<DepartmentMission> DepartmentMission { get; set; } = new List<DepartmentMission>();
-
-    public virtual ICollection<DepartmentPeos> DepartmentPeos { get; set; } = new List<DepartmentPeos>();
-
-    public virtual ICollection<DepartmentPsos> DepartmentPsos { get; set; } = new List<DepartmentPsos>();
+}
+public partial class Department
+{
+    public virtual ICollection<DepartmentIntake> DepartmentIntakes { get; set; } = new List<DepartmentIntake>();
 }

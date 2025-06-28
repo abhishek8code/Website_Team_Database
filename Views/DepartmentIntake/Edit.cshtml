@@ -1,9 +1,27 @@
 @model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentIntake
 
 @{
-    ViewData["Title"] = "Edit DepartmentIntake";
+    ViewData["Title"] = "Edit Intake";
 }
 
-<h2>Edit DepartmentIntake</h2>
+<h4>Edit Department Intake</h4>
 
-<!-- Add Edit content for DepartmentIntake -->
+<form asp-action="EditIntake" method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="DeptId" />
+
+    <div class="form-group">
+        <label asp-for="IntakeYear"></label>
+        <input asp-for="IntakeYear" type="date" class="form-control" />
+        <span asp-validation-for="IntakeYear" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="IntakeCount"></label>
+        <input asp-for="IntakeCount" class="form-control" />
+        <span asp-validation-for="IntakeCount" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a asp-action="DepartmentIntakes" asp-route-departmentId="@Model.DeptId" class="btn btn-secondary">Cancel</a>
+</form>

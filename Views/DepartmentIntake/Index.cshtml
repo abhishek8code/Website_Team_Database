@@ -1,33 +1,37 @@
 @model IEnumerable<GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentIntake>
 
 @{
-    ViewData["Title"] = "DepartmentIntake List";
+    ViewData["Title"] = "Department Intake Records";
 }
 
-<h2>DepartmentIntake List</h2>
+<h4>Intake Records for Department: <strong class="text-primary">@ViewBag.DepartmentName</strong></h4>
+<hr />
 
-<p><a asp-action="Create" class="btn btn-primary">Create New</a></p>
+<p>
+    <a asp-action="AddIntake" asp-route-departmentId="@ViewBag.DepartmentId" class="btn btn-primary">+ Add New Intake</a>
+</p>
 
-<table class="table">
+<table class="table table-bordered">
     <thead>
         <tr>
-            <th>IntakeCount</th>
-            <th>IntakeYear</th>
+            <th>Department</th>
+            <th>Year</th>
+            <th>Intake Count</th>
             <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.IntakeCount</td>
-            <td>@item.IntakeYear</td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-    }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Dept?.Name</td>
+                <td>@(item.IntakeYear?.ToString("yyyy"))</td>
+                <td>@item.IntakeCount</td>
+                <td>
+                    <a asp-action="EditIntake" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-action="DeleteIntake" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

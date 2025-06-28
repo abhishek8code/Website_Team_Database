@@ -1,31 +1,31 @@
 @model IEnumerable<GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentMission>
 
 @{
-    ViewData["Title"] = "DepartmentMission List";
+    ViewData["Title"] = "Department Missions";
 }
 
-<h2>DepartmentMission List</h2>
+<h3>Mission Statements for <strong class="text-primary">@ViewBag.DepartmentName</strong></h3>
 
-<p><a asp-action="Create" class="btn btn-primary">Create New</a></p>
+<a asp-action="AddMission"
+   asp-controller="Department"
+   asp-route-departmentId="@ViewBag.DepartmentId"
+   class="btn btn-success mb-3">
+    + Add Mission
+</a>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>MissionText</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.MissionText</td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-    }
-    </tbody>
-</table>
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No missions have been added yet.</div>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var item in Model)
+        {
+            <li class="list-group-item">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                @item.MissionText
+            </li>
+        }
+    </ul>
+}

@@ -1,9 +1,62 @@
-@model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentIntake
+@model GECPATAN_FACULTY_PORTAL.Models.Department.Department
 
 @{
-    ViewData["Title"] = "Details DepartmentIntake";
+    ViewData["Title"] = "Department Details";
 }
 
-<h2>Details DepartmentIntake</h2>
+<h2>@Model.Name</h2>
 
-<!-- Add Details content for DepartmentIntake -->
+<div class="mb-4">
+    <dl class="row">
+        <dt class="col-sm-3">Slogan</dt>
+        <dd class="col-sm-9">@Model.Slogan</dd>
+
+        <dt class="col-sm-3">Tagline</dt>
+        <dd class="col-sm-9">@Model.Tagline</dd>
+
+        <dt class="col-sm-3">About</dt>
+        <dd class="col-sm-9">@Model.About</dd>
+    </dl>
+</div>
+
+<hr />
+
+<h4>Intake History</h4>
+
+<p>
+    <a asp-action="AddIntake" asp-route-departmentId="@Model.Id" class="btn btn-sm btn-success">+ Add Intake</a>
+</p>
+
+@{
+    var intakes = Model.DepartmentIntakes?.OrderByDescending(i => i.IntakeYear).ToList();
+}
+
+@if (intakes != null && intakes.Count > 0)
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Intake Count</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var intake in intakes)
+            {
+                <tr>
+                    <td>@intake.IntakeYear?.ToString("yyyy")</td>
+                    <td>@intake.IntakeCount</td>
+                    <td>
+                        <a asp-action="EditIntake" asp-route-id="@intake.Id" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-action="DeleteIntake" asp-route-id="@intake.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No intake records found for this department.</p>
+}

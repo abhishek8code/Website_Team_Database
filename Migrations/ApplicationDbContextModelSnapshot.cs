@@ -17,12 +17,12 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.5")
+                .HasAnnotation("ProductVersion", "9.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.FacultyMember", b =>
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.Department", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,25 +30,157 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Department")
-                        .IsRequired()
+                    b.Property<string>("About")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Designation")
-                        .IsRequired()
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("EmailID")
-                        .IsRequired()
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("CreatedDateInt")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("ShowIntake")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Slogan")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tagline")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TitleImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("UpdatedDateInt")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Department");
+                });
+
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentIntake", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("DeptId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("IntakeCount")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("IntakeYear")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DeptId");
+
+                    b.ToTable("DepartmentIntake");
+                });
+
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentMission", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("DeptId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MissionText")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("FacultyMember");
+                    b.HasIndex("DeptId");
+
+                    b.ToTable("DepartmentMission");
+                });
+
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentPeos", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("DeptId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Peotext")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DeptId");
+
+                    b.ToTable("DepartmentPeos");
+                });
+
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentPsos", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("DeptId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Psotext")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DeptId");
+
+                    b.ToTable("DepartmentPsos");
+                });
+
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentVision", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("DeptId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("VisionText")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DepartmentVision");
                 });
 
             modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Users", b =>
@@ -257,6 +389,50 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentIntake", b =>
+                {
+                    b.HasOne("GECPATAN_FACULTY_PORTAL.Models.Department.Department", "Dept")
+                        .WithMany("DepartmentIntake")
+                        .HasForeignKey("DeptId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Dept");
+                });
+
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentMission", b =>
+                {
+                    b.HasOne("GECPATAN_FACULTY_PORTAL.Models.Department.Department", "Dept")
+                        .WithMany("DepartmentMission")
+                        .HasForeignKey("DeptId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Dept");
+                });
+
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentPeos", b =>
+                {
+                    b.HasOne("GECPATAN_FACULTY_PORTAL.Models.Department.Department", "Dept")
+                        .WithMany("DepartmentPeos")
+                        .HasForeignKey("DeptId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Dept");
+                });
+
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentPsos", b =>
+                {
+                    b.HasOne("GECPATAN_FACULTY_PORTAL.Models.Department.Department", "Dept")
+                        .WithMany("DepartmentPsos")
+                        .HasForeignKey("DeptId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Dept");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -306,6 +482,17 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.Department", b =>
+                {
+                    b.Navigation("DepartmentIntake");
+
+                    b.Navigation("DepartmentMission");
+
+                    b.Navigation("DepartmentPeos");
+
+                    b.Navigation("DepartmentPsos");
                 });
 #pragma warning restore 612, 618
         }

@@ -6,7 +6,7 @@
 
 <h2>Edit Department</h2>
 
-<form asp-action="Edit">
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
     @Html.AntiForgeryToken()
     <input type="hidden" asp-for="Id" />
 
@@ -17,18 +17,28 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="Image" class="control-label"></label>
-        <input asp-for="Image" class="form-control" />
+        <label>Current Image</label><br />
+        @if (!string.IsNullOrEmpty(Model.Image))
+        {
+            <img src="~/@Model.Image" alt="Current Image" style="max-width:200px;" />
+        }
+    </div>
+
+    <div class="form-group">
+        <label>Upload New Image</label>
+        <input type="file" name="ImageFile" class="form-control" />
     </div>
 
     <div class="form-group">
         <label asp-for="Slogan" class="control-label"></label>
         <input asp-for="Slogan" class="form-control" />
+        <span asp-validation-for="Slogan" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="Tagline" class="control-label"></label>
         <input asp-for="Tagline" class="form-control" />
+        <span asp-validation-for="Tagline" class="text-danger"></span>
     </div>
 
     <div class="form-group">
@@ -42,13 +52,9 @@
     </div>
 
     <div class="form-group form-check">
-        <input asp-for="ShowIntake" class="form-check-input" type="checkbox" />
+        <input asp-for="ShowIntake" class="form-check-input" />
         <label asp-for="ShowIntake" class="form-check-label"></label>
-    </div>
-
-    <div class="form-group form-check">
-        <input asp-for="IsDeleted" class="form-check-input" type="checkbox" />
-        <label asp-for="IsDeleted" class="form-check-label"></label>
+        <span asp-validation-for="ShowIntake" class="text-danger"></span>
     </div>
 
     <div class="form-group">
@@ -76,3 +82,9 @@
         <a asp-action="Index" class="btn btn-secondary">Cancel</a>
     </div>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

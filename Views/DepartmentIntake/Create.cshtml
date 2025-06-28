@@ -1,21 +1,59 @@
 @model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentIntake
 
 @{
-    ViewData["Title"] = "Create DepartmentIntake";
+    ViewData["Title"] = "Add Intake";
 }
 
-<h2>Create DepartmentIntake</h2>
+<h4>Add Department Intake</h4>
 
-<form asp-action="Create">
+<form asp-action="AddIntake" method="post">
+    <div class="form-group">
+        <label asp-for="DeptId">Select Department</label>
+        <select asp-for="DeptId" class="form-control" asp-items="@(ViewBag.Departments)">
+            <option value="">-- Select Department --</option>
+        </select>
+        <span asp-validation-for="DeptId" class="text-danger"></span>
+    </div>
+
+
+    <h5>Add Intake for Department: <strong class="text-primary">@ViewBag.DepartmentName</strong></h5>
+    <hr />
+
+    @* Optional: Show ModelState validation errors (server-side) *@
+    @if (!ViewData.ModelState.IsValid && ViewData.ModelState.Count > 0)
+    {
+        <div class="alert alert-danger">
+            <strong>Validation Errors:</strong>
+            <ul>
+                @foreach (var state in ViewData.ModelState)
+                {
+                    foreach (var error in state.Value.Errors)
+                    {
+                        <li><strong>@state.Key:</strong> @error.ErrorMessage</li>
+                    }
+                }
+            </ul>
+        </div>
+    }
+
+    <div class="form-group">
+        <label asp-for="IntakeYear"></label>
+        <input asp-for="IntakeYear" type="date" class="form-control" />
+        <span asp-validation-for="IntakeYear" class="text-danger"></span>
+    </div>
+
     <div class="form-group">
         <label asp-for="IntakeCount"></label>
         <input asp-for="IntakeCount" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="IntakeYear"></label>
-        <input asp-for="IntakeYear" class="form-control" />
+        <span asp-validation-for="IntakeCount" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-success">Create</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    <button type="submit" class="btn btn-success">Add</button>
+    <a asp-action="DepartmentIntakes" asp-route-departmentId="@Model.DeptId" class="btn btn-secondary">Cancel</a>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
