@@ -385,6 +385,195 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
             return View("~/Views/DepartmentMission/Create.cshtml", mission);
         }
 
+
+        // View All PEOs
+        public async Task<IActionResult> DepartmentPeos(int departmentId)
+        {
+            var peos = await _context.DepartmentPeos
+                .Where(m => m.DeptId == departmentId)
+                .Include(m => m.Dept)
+                .ToListAsync();
+
+            ViewBag.DepartmentName = _context.Departments.FirstOrDefault(d => d.Id == departmentId)?.Name;
+            ViewBag.DepartmentId = departmentId;
+
+            return View("~/Views/DepartmentPeos/Index.cshtml", peos);
+        }
+
+
+
+        // Show Create PEO Form
+        public IActionResult AddPeos(int departmentId)
+        {
+            ViewBag.DepartmentId = departmentId;
+            return View("~/Views/DepartmentPeos/Create.cshtml", new DepartmentPeos { DeptId = departmentId });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        // Submit Create PEO Form
+        public async Task<IActionResult> AddPeos(DepartmentPeos Peo)
+        {
+            ModelState.Remove("Dept"); // since it's virtual and not bound
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(Peo);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("DepartmentPeos", new { departmentId = Peo.DeptId });
+            }
+
+            ViewBag.DepartmentId = Peo.DeptId;
+            return View("~/Views/DepartmentPeos/Create.cshtml", Peo);
+        }
+        // View PSOs for a Department
+        public async Task<IActionResult> DepartmentPsos(int departmentId)
+        {
+            var psos = await _context.DepartmentPsos
+                .Where(p => p.DeptId == departmentId)
+                .Include(p => p.Dept)
+                .ToListAsync();
+
+            ViewBag.DepartmentName = _context.Departments.FirstOrDefault(d => d.Id == departmentId)?.Name;
+            ViewBag.DepartmentId = departmentId;
+
+            return View("~/Views/DepartmentPsos/Index.cshtml", psos);
+        }
+
+        // Show Create PSO Form
+        public IActionResult AddPsos(int departmentId)
+        {
+            ViewBag.DepartmentId = departmentId;
+            return View("~/Views/DepartmentPsos/Create.cshtml", new DepartmentPsos { DeptId = departmentId });
+        }
+
+        // Submit Create PSO Form
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddPsos(DepartmentPsos Pso)
+        {
+            ModelState.Remove("Dept"); // since it's virtual and not posted from form
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(Pso);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("DepartmentPsos", new { departmentId = Pso.DeptId });
+            }
+
+            ViewBag.DepartmentId = Pso.DeptId;
+            return View("~/Views/DepartmentPsos/Create.cshtml", Pso);
+        }
+        public async Task<IActionResult> DepartmentLabs(int departmentId)
+        {
+            var labs = await _context.DepartmentLabs
+                .Where(l => l.DeptId == departmentId)
+                .Include(l => l.Dept)
+                .ToListAsync();
+
+            ViewBag.DepartmentName = _context.Departments.FirstOrDefault(d => d.Id == departmentId)?.Name;
+            ViewBag.DepartmentId = departmentId;
+
+            return View("~/Views/DepartmentLabs/Index.cshtml", labs);
+        }
+
+        // Show Create Form
+        public IActionResult AddLab(int departmentId)
+        {
+            ViewBag.DepartmentId = departmentId;
+            return View("~/Views/DepartmentLabs/Create.cshtml", new DepartmentLabs { DeptId = departmentId });
+        }
+
+        // Save New Lab
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddLab(DepartmentLabs lab, IFormFile? LabImageFile)
+        {
+            ModelState.Remove("Dept"); // Skip validation for navigation property
+
+            if (ModelState.IsValid)
+            {
+                // Upload image if provided
+                if (LabImageFile != null && LabImageFile.Length > 0)
+                {
+                    var folderPath = Path.Combine("wwwroot", "Labs", lab.DeptId.ToString());
+                    if (!Directory.Exists(folderPath))
+                        Directory.CreateDirectory(folderPath);
+
+                    var fileName = Path.GetFileName(LabImageFile.FileName);
+                    var filePath = Path.Combine(folderPath, fileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await LabImageFile.CopyToAsync(stream);
+                    }
+
+                    lab.LabImage = $"Labs/{lab.DeptId}/{fileName}";
+                }
+
+                _context.Add(lab);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("DepartmentLabs", new { departmentId = lab.DeptId });
+            }
+
+            ViewBag.DepartmentId = lab.DeptId;
+            return View("~/Views/DepartmentLabs/Create.cshtml", lab);
+        }
+        // Show Edit Form
+        public async Task<IActionResult> EditLab(int id)
+        {
+            var lab = await _context.DepartmentLabs.FindAsync(id);
+            if (lab == null) return NotFound();
+
+            ViewBag.DepartmentId = lab.DeptId;
+            return View("~/Views/DepartmentLabs/Edit.cshtml", lab);
+        }
+
+        // Handle Edit Submission
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditLab(int id, DepartmentLabs lab, IFormFile? LabImageFile)
+        {
+            if (id != lab.LabId) return NotFound();
+            ModelState.Remove("Dept");
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    // Update image if uploaded
+                    if (LabImageFile != null && LabImageFile.Length > 0)
+                    {
+                        var folderPath = Path.Combine("wwwroot", "Labs", lab.DeptId.ToString());
+                        if (!Directory.Exists(folderPath))
+                            Directory.CreateDirectory(folderPath);
+
+                        var fileName = Path.GetFileName(LabImageFile.FileName);
+                        var filePath = Path.Combine(folderPath, fileName);
+
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await LabImageFile.CopyToAsync(stream);
+                        }
+
+                        lab.LabImage = $"Labs/{lab.DeptId}/{fileName}";
+                    }
+
+                    _context.Update(lab);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction("DepartmentLabs", new { departmentId = lab.DeptId });
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!_context.DepartmentLabs.Any(e => e.LabId == lab.LabId))
+                        return NotFound();
+                    else throw;
+                }
+            }
+
+            ViewBag.DepartmentId = lab.DeptId;
+            return View("~/Views/DepartmentLabs/Edit.cshtml", lab);
+        }
+
     }
 }
 

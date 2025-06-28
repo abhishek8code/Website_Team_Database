@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GECPATAN FACULTY PORTAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70c6199d977bfafee2d740b1a6fd6a5db8b1d05b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2ad15123494d053528e7b969080ce347e487205")]
 [assembly: System.Reflection.AssemblyProductAttribute("GECPATAN FACULTY PORTAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GECPATAN FACULTY PORTAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

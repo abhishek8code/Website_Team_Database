@@ -1,35 +1,50 @@
-@* @model IEnumerable<GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentLabs>
-
+@model IEnumerable<GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentLabs>
 @{
-    ViewData["Title"] = "DepartmentLabs List";
+    ViewData["Title"] = "Labs";
 }
+<h3>Labs for @ViewBag.DepartmentName</h3>
 
-<h2>DepartmentLabs List</h2>
+<a asp-action="AddLab" asp-route-departmentId="@ViewBag.DepartmentId" class="btn btn-success mb-3">+ Add Lab</a>
 
-<p><a asp-action="Create" class="btn btn-primary">Create New</a></p>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>LabName</th>
-            <th>LabImage</th>
-            <th>LabDetails</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.LabName</td>
-            <td>@item.LabImage</td>
-            <td>@item.LabDetails</td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-    }
-    </tbody>
-</table> *@
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No labs added yet.</div>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Lab Name</th>
+                <th>Lab Image</th>
+                <th>Lab Details</th>
+                <th>Edit</th> <!-- Changed from Actions to Edit -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var lab in Model)
+            {
+                <tr>
+                    <td>@lab.LabName</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(lab.LabImage))
+                        {
+                            <img src="~/@lab.LabImage" style="max-height: 80px;" />
+                        }
+                        else
+                        {
+                            <span class="text-muted">No Image</span>
+                        }
+                    </td>
+                    <td>@lab.LabDetails</td>
+                    <td>
+                        <a asp-action="EditLab"
+                           asp-route-id="@lab.LabId"
+                           class="btn btn-sm btn-warning">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    
+}
