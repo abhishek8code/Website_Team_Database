@@ -1,9 +1,14 @@
 @model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentVision
 
 @{
-    ViewData["Title"] = "Details DepartmentVision";
+    ViewData["Title"] = "Department Vision Details";
 }
 
-<h2>Details DepartmentVision</h2>
+<h2>Vision for @ViewBag.DepartmentName</h2>
 
-<!-- Add Details content for DepartmentVision -->
+<div class="card">
+    <div class="card-body">
+        <p>@Model.VisionText</p>
+    </div>
+    <a asp-controller="Department" asp-action="ManageVision" asp-route-departmentId="@Model.DeptId" class="btn btn-primary mt-2">Edit Vision</a>
+</div>

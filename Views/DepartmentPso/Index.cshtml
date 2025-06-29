@@ -1,0 +1,31 @@
+@model IEnumerable<GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentPso>
+
+@{
+    ViewData["Title"] = "Department PSOs";
+}
+
+<h3>PSO Statements for <strong class="text-primary">@ViewBag.DepartmentName</strong></h3>
+
+<a asp-action="AddPsos"
+   asp-controller="Department"
+   asp-route-departmentId="@ViewBag.DepartmentId"
+   class="btn btn-success mb-3">
+    + Add PSO
+</a>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No PSOs have been added yet.</div>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var item in Model)
+        {
+            <li class="list-group-item">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                @item.Psotext
+            </li>
+        }
+    </ul>
+}

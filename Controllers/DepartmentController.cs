@@ -44,25 +44,29 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
         // POST: Department/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [HttpPost]
-        public async Task<IActionResult> Create([Bind("Id,Name,Image,Slogan,Tagline,TitleImage,About,ShowIntake,IsDeleted,CreatedDate,CreatedDateInt,UpdatedDate,UpdatedDateInt,CreatedBy,UpdatedBy")] Department department, IFormFile ImageFile)
+        public async Task<IActionResult> Create([Bind("Id,Name,Slogan,Tagline,TitleImage,About,ShowIntake")] Department department, IFormFile ImageFile)
         {
             if (ModelState.IsValid)
             {
-                // Step 1: Save department first to generate Id (if it's Identity/auto-increment)
+                // System-generated metadata
+                var now = DateTime.UtcNow;
+                department.CreatedDate = now;
+                department.UpdatedDate = now;
+                department.CreatedDateInt = new DateTimeOffset(now).ToUnixTimeSeconds();
+                department.UpdatedDateInt = new DateTimeOffset(now).ToUnixTimeSeconds();
+                //department.Isdeleted = false;
+
+                // Save entity first
                 _context.Add(department);
                 await _context.SaveChangesAsync();
 
-                // Step 2: Check if an image is uploaded
+                // Handle image upload if present
                 if (ImageFile != null && ImageFile.Length > 0)
                 {
-                    // Build path like: wwwroot/Department/5/
                     var folderPath = Path.Combine("wwwroot", "Department", department.Id.ToString());
-
                     if (!Directory.Exists(folderPath))
                         Directory.CreateDirectory(folderPath);
 
-                    // Unique file name (optional: add timestamp or GUID)
                     var fileName = Path.GetFileName(ImageFile.FileName);
                     var filePath = Path.Combine(folderPath, fileName);
 
@@ -71,10 +75,7 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
                         await ImageFile.CopyToAsync(stream);
                     }
 
-                    // Store relative path like: Department/5/yourimage.jpg
                     department.Image = $"Department/{department.Id}/{fileName}";
-
-                    // Step 3: Update department with image path
                     _context.Update(department);
                     await _context.SaveChangesAsync();
                 }
@@ -84,7 +85,6 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
 
             return View(department);
         }
-
 
         // GET: Department/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -100,7 +100,7 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
         // POST: Department/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Image,Slogan,Tagline,TitleImage,About,ShowIntake,CreatedDate,CreatedDateInt,UpdatedDate,UpdatedDateInt,CreatedBy,UpdatedBy")] Department department, IFormFile ImageFile)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Image,Slogan,Tagline,TitleImage,About,ShowIntake,CreatedDate,CreatedDateInt,UpdatedDate,UpdatedDateInt,IsDeleted")] Department department, IFormFile ImageFile)
         {
             if (id != department.Id)
                 return NotFound();
@@ -109,6 +109,10 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
             {
                 try
                 {
+                    // Set UpdatedDate and UpdatedDateInt
+                    department.UpdatedDate = DateTime.Now;
+                    department.UpdatedDateInt = new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds();
+
                     // Save new image if uploaded
                     if (ImageFile != null && ImageFile.Length > 0)
                     {
@@ -139,11 +143,12 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
                     else
                         throw;
                 }
+
                 return RedirectToAction(nameof(Index));
             }
+
             return View(department);
         }
-
 
         // GET: Department/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -215,6 +220,12 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
 
             if (ModelState.IsValid)
             {
+                intake.CreatedDate = DateTime.Now;
+                intake.CreatedDateInt = new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds();
+                intake.UpdatedDate = DateTime.Now;
+                intake.UpdatedDateInt = new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds();
+                intake.IsDeleted = false;
+
                 _context.Add(intake);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("DepartmentIntakes", new { departmentId = intake.DeptId });
@@ -232,6 +243,7 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
         }
 
 
+
         // DepartmentIntake: Edit
         public async Task<IActionResult> EditIntake(int id)
         {
@@ -246,18 +258,36 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditIntake(int id, DepartmentIntake intake)
         {
-            if (id != intake.Id) return NotFound();
+            if (id != intake.Id)
+                return NotFound();
 
             if (ModelState.IsValid)
             {
-                _context.Update(intake);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("DepartmentIntakes", new { departmentId = intake.DeptId });
+                var existing = await _context.DepartmentIntakes.FindAsync(id);
+                if (existing == null)
+                    return NotFound();
+
+                existing.IntakeYear = intake.IntakeYear;
+                existing.IntakeCount = intake.IntakeCount;
+                existing.UpdatedDate = DateTime.Now;
+                existing.UpdatedDateInt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
+                try
+                {
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction("DepartmentIntakes", new { departmentId = existing.DeptId });
+                }
+                catch (Exception ex)
+                {
+                    // Log error and show it on the page temporarily
+                    ModelState.AddModelError("", $"Save failed: {ex.Message}");
+                }
             }
 
             ViewBag.DepartmentId = intake.DeptId;
             return View("~/Views/DepartmentIntake/Edit.cshtml", intake);
         }
+
 
         // DepartmentIntake: Delete
         public async Task<IActionResult> DeleteIntake(int id)
@@ -278,28 +308,42 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
             var intake = await _context.DepartmentIntakes.FindAsync(id);
             if (intake != null)
             {
-                _context.DepartmentIntakes.Remove(intake);
+                // Soft delete
+                intake.IsDeleted = true;
+                intake.UpdatedDate = DateTime.Now;
+                intake.UpdatedDateInt = new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds();
+
+                _context.Update(intake);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("DepartmentIntakes", new { departmentId = intake.DeptId });
             }
             return NotFound();
         }
+
+
+
+        //Department Vision
+        // GET: DepartmentVision/Manage
         public async Task<IActionResult> ManageVision(int departmentId)
         {
-            var vision = await _context.DepartmentVision
+            var vision = await _context.DepartmentVisions
                 .FirstOrDefaultAsync(v => v.DeptId == departmentId);
+
+            ViewBag.DepartmentName = await _context.Departments
+                .Where(d => d.Id == departmentId)
+                .Select(d => d.Name)
+                .FirstOrDefaultAsync();
 
             if (vision == null)
             {
-                vision = new DepartmentVision { DeptId = departmentId };
+                // Show Create form
+                return View("~/Views/DepartmentVision/Create.cshtml", new DepartmentVision { DeptId = departmentId });
             }
-
-            ViewBag.DepartmentName = _context.Departments
-                .Where(d => d.Id == departmentId)
-                .Select(d => d.Name)
-                .FirstOrDefault();
-
-            return View("VisionForm", vision);
+            else
+            {
+                // Show Edit form
+                return View("~/Views/DepartmentVision/Edit.cshtml", vision);
+            }
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -307,33 +351,38 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
         {
             if (ModelState.IsValid)
             {
-                var existing = await _context.DepartmentVision
+                var existing = await _context.DepartmentVisions
                     .FirstOrDefaultAsync(v => v.DeptId == model.DeptId);
 
                 if (existing != null)
                 {
+                    // Update
                     existing.VisionText = model.VisionText;
+                    existing.UpdatedDate = DateTime.Now;
+                    existing.UpdatedDateInt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
                     _context.Update(existing);
                 }
                 else
                 {
+                    // Create
+                    model.CreatedDate = DateTime.Now;
+                    model.CreatedDateInt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
                     _context.Add(model);
                 }
-                var maxId = _context.DepartmentVision.Max(v => (int?)v.Id) ?? 0;
-                model.Id = maxId + 1;
 
-                _context.Add(model);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index"); // or department details page
+                return RedirectToAction("ViewVision", "Department", new { departmentId = model.DeptId });
+                
             }
 
-            return View("VisionForm", model);
+            // Return to appropriate view if error
+            return View(model.Id == 0 ? "~/Views/DepartmentVision/Create.cshtml" : "~/Views/DepartmentVision/Edit.cshtml", model);
         }
-
-
         public async Task<IActionResult> ViewVision(int departmentId)
         {
-            var vision = await _context.DepartmentVision
+            var vision = await _context.DepartmentVisions
                 .FirstOrDefaultAsync(v => v.DeptId == departmentId);
 
             if (vision == null)
@@ -344,17 +393,15 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
                 .Select(d => d.Name)
                 .FirstOrDefaultAsync();
 
-            return View("VisionDisplay", vision);
+            return View("~/Views/DepartmentVision/Details.cshtml", vision);
         }
 
 
-
-        //Department Mission
+        // GET: Department Mission List
         public async Task<IActionResult> DepartmentMissions(int departmentId)
         {
-            var missions = await _context.DepartmentMission
-                .Where(m => m.DeptId == departmentId)
-                .Include(m => m.Dept)
+            var missions = await _context.DepartmentMissions
+                .Where(m => m.DeptId == departmentId && m.IsDeleted == false)
                 .ToListAsync();
 
             ViewBag.DepartmentName = _context.Departments.FirstOrDefault(d => d.Id == departmentId)?.Name;
@@ -362,20 +409,25 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
 
             return View("~/Views/DepartmentMission/Index.cshtml", missions);
         }
+
+        // GET: Add New Mission
         public IActionResult AddMission(int departmentId)
         {
             ViewBag.DepartmentId = departmentId;
             return View("~/Views/DepartmentMission/Create.cshtml", new DepartmentMission { DeptId = departmentId });
         }
 
+        // POST: Add New Mission
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddMission(DepartmentMission mission)
         {
-            ModelState.Remove("Dept"); // since it's virtual and not bound
-
             if (ModelState.IsValid)
             {
+                mission.CreatedDate = DateTime.Now;
+                mission.CreatedDateInt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+                mission.IsDeleted = false;
+
                 _context.Add(mission);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("DepartmentMissions", new { departmentId = mission.DeptId });
@@ -385,89 +437,150 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
             return View("~/Views/DepartmentMission/Create.cshtml", mission);
         }
 
+        // GET: Edit Mission
+        public async Task<IActionResult> EditMission(int id)
+        {
+            var mission = await _context.DepartmentMissions.FindAsync(id);
+            if (mission == null || mission.IsDeleted)
+                return NotFound();
+
+            ViewBag.DepartmentId = mission.DeptId;
+            return View("~/Views/DepartmentMission/Edit.cshtml", mission);
+        }
+
+        // POST: Edit Mission
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditMission(int id, DepartmentMission mission)
+        {
+            if (id != mission.Id)
+                return NotFound();
+
+            if (ModelState.IsValid)
+            {
+                var existing = await _context.DepartmentMissions.FindAsync(id);
+                if (existing == null)
+                    return NotFound();
+
+                existing.MissionText = mission.MissionText;
+                existing.UpdatedDate = DateTime.Now;
+                existing.UpdatedDateInt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
+                _context.Update(existing);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction("DepartmentMissions", new { departmentId = mission.DeptId });
+            }
+
+            ViewBag.DepartmentId = mission.DeptId;
+            return View("~/Views/DepartmentMission/Edit.cshtml", mission);
+        }
+
+        // POST: Soft Delete Mission
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteMission(int id)
+        {
+            var mission = await _context.DepartmentMissions.FindAsync(id);
+            if (mission != null)
+            {
+                mission.IsDeleted = true;
+                mission.UpdatedDate = DateTime.Now;
+                mission.UpdatedDateInt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
+                _context.Update(mission);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction("DepartmentMissions", new { departmentId = mission?.DeptId });
+        }
 
         // View All PEOs
-        public async Task<IActionResult> DepartmentPeos(int departmentId)
+        public async Task<IActionResult> DepartmentPeo(int departmentId)
         {
             var peos = await _context.DepartmentPeos
-                .Where(m => m.DeptId == departmentId)
+                .Where(m => m.DeptId == departmentId && !m.IsDeleted)
                 .Include(m => m.Dept)
                 .ToListAsync();
 
             ViewBag.DepartmentName = _context.Departments.FirstOrDefault(d => d.Id == departmentId)?.Name;
             ViewBag.DepartmentId = departmentId;
 
-            return View("~/Views/DepartmentPeos/Index.cshtml", peos);
+            return View("~/Views/DepartmentPeo/Index.cshtml", peos);
         }
-
-
 
         // Show Create PEO Form
         public IActionResult AddPeos(int departmentId)
         {
             ViewBag.DepartmentId = departmentId;
-            return View("~/Views/DepartmentPeos/Create.cshtml", new DepartmentPeos { DeptId = departmentId });
+            return View("~/Views/DepartmentPeo/Create.cshtml", new DepartmentPeo { DeptId = departmentId });
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        // Submit Create PEO Form
-        public async Task<IActionResult> AddPeos(DepartmentPeos Peo)
+        public async Task<IActionResult> AddPeos(DepartmentPeo peo)
         {
-            ModelState.Remove("Dept"); // since it's virtual and not bound
+            ModelState.Remove("Dept");
 
             if (ModelState.IsValid)
             {
-                _context.Add(Peo);
+                peo.CreatedDate = DateTime.Now;
+                peo.CreatedDateInt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+                peo.IsDeleted = false;
+
+                _context.Add(peo);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("DepartmentPeos", new { departmentId = Peo.DeptId });
+                return RedirectToAction("DepartmentPeo", new { departmentId = peo.DeptId });
             }
 
-            ViewBag.DepartmentId = Peo.DeptId;
-            return View("~/Views/DepartmentPeos/Create.cshtml", Peo);
+            ViewBag.DepartmentId = peo.DeptId;
+            return View("~/Views/DepartmentPeo/Create.cshtml", peo);
         }
-        // View PSOs for a Department
+
         public async Task<IActionResult> DepartmentPsos(int departmentId)
         {
             var psos = await _context.DepartmentPsos
-                .Where(p => p.DeptId == departmentId)
+                .Where(p => p.DeptId == departmentId && !p.IsDeleted)
                 .Include(p => p.Dept)
                 .ToListAsync();
 
             ViewBag.DepartmentName = _context.Departments.FirstOrDefault(d => d.Id == departmentId)?.Name;
             ViewBag.DepartmentId = departmentId;
 
-            return View("~/Views/DepartmentPsos/Index.cshtml", psos);
+            return View("~/Views/DepartmentPso/Index.cshtml", psos);
         }
 
-        // Show Create PSO Form
         public IActionResult AddPsos(int departmentId)
         {
             ViewBag.DepartmentId = departmentId;
-            return View("~/Views/DepartmentPsos/Create.cshtml", new DepartmentPsos { DeptId = departmentId });
+            return View("~/Views/DepartmentPso/Create.cshtml", new DepartmentPso { DeptId = departmentId });
         }
 
-        // Submit Create PSO Form
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddPsos(DepartmentPsos Pso)
+        public async Task<IActionResult> AddPsos(DepartmentPso pso)
         {
-            ModelState.Remove("Dept"); // since it's virtual and not posted from form
+            ModelState.Remove("Dept");
 
             if (ModelState.IsValid)
             {
-                _context.Add(Pso);
+                pso.CreatedDate = DateTime.Now;
+                pso.CreatedDateInt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+                pso.IsDeleted = false;
+
+                _context.Add(pso);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("DepartmentPsos", new { departmentId = Pso.DeptId });
+                return RedirectToAction("DepartmentPsos", new { departmentId = pso.DeptId });
             }
 
-            ViewBag.DepartmentId = Pso.DeptId;
-            return View("~/Views/DepartmentPsos/Create.cshtml", Pso);
+            ViewBag.DepartmentId = pso.DeptId;
+            return View("~/Views/DepartmentPso/Create.cshtml", pso);
         }
-        public async Task<IActionResult> DepartmentLabs(int departmentId)
+
+        public async Task<IActionResult> DepartmentLab(int departmentId)
         {
             var labs = await _context.DepartmentLabs
-                .Where(l => l.DeptId == departmentId)
+                .Where(l => l.DeptId == departmentId && !l.IsDeleted)
                 .Include(l => l.Dept)
                 .ToListAsync();
 
@@ -477,31 +590,28 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
             return View("~/Views/DepartmentLabs/Index.cshtml", labs);
         }
 
-        // Show Create Form
         public IActionResult AddLab(int departmentId)
         {
             ViewBag.DepartmentId = departmentId;
-            return View("~/Views/DepartmentLabs/Create.cshtml", new DepartmentLabs { DeptId = departmentId });
+            return View("~/Views/DepartmentLabs/Create.cshtml", new DepartmentLab { DeptId = departmentId });
         }
 
-        // Save New Lab
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddLab(DepartmentLabs lab, IFormFile? LabImageFile)
+        public async Task<IActionResult> AddLab(DepartmentLab lab, IFormFile? LabImageFile)
         {
-            ModelState.Remove("Dept"); // Skip validation for navigation property
+            ModelState.Remove("Dept");
 
             if (ModelState.IsValid)
             {
-                // Upload image if provided
                 if (LabImageFile != null && LabImageFile.Length > 0)
                 {
                     var folderPath = Path.Combine("wwwroot", "Labs", lab.DeptId.ToString());
-                    if (!Directory.Exists(folderPath))
-                        Directory.CreateDirectory(folderPath);
+                    if (!Directory.Exists(folderPath)) Directory.CreateDirectory(folderPath);
 
                     var fileName = Path.GetFileName(LabImageFile.FileName);
                     var filePath = Path.Combine(folderPath, fileName);
+
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
                         await LabImageFile.CopyToAsync(stream);
@@ -510,15 +620,19 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
                     lab.LabImage = $"Labs/{lab.DeptId}/{fileName}";
                 }
 
+                lab.CreatedDate = DateTime.Now;
+                lab.CreatedDateInt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+                lab.IsDeleted = false;
+
                 _context.Add(lab);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("DepartmentLabs", new { departmentId = lab.DeptId });
+                return RedirectToAction("DepartmentLab", new { departmentId = lab.DeptId });
             }
 
             ViewBag.DepartmentId = lab.DeptId;
             return View("~/Views/DepartmentLabs/Create.cshtml", lab);
         }
-        // Show Edit Form
+
         public async Task<IActionResult> EditLab(int id)
         {
             var lab = await _context.DepartmentLabs.FindAsync(id);
@@ -528,10 +642,9 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
             return View("~/Views/DepartmentLabs/Edit.cshtml", lab);
         }
 
-        // Handle Edit Submission
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditLab(int id, DepartmentLabs lab, IFormFile? LabImageFile)
+        public async Task<IActionResult> EditLab(int id, DepartmentLab lab, IFormFile? LabImageFile)
         {
             if (id != lab.LabId) return NotFound();
             ModelState.Remove("Dept");
@@ -540,12 +653,10 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
             {
                 try
                 {
-                    // Update image if uploaded
                     if (LabImageFile != null && LabImageFile.Length > 0)
                     {
                         var folderPath = Path.Combine("wwwroot", "Labs", lab.DeptId.ToString());
-                        if (!Directory.Exists(folderPath))
-                            Directory.CreateDirectory(folderPath);
+                        if (!Directory.Exists(folderPath)) Directory.CreateDirectory(folderPath);
 
                         var fileName = Path.GetFileName(LabImageFile.FileName);
                         var filePath = Path.Combine(folderPath, fileName);
@@ -558,9 +669,12 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
                         lab.LabImage = $"Labs/{lab.DeptId}/{fileName}";
                     }
 
+                    lab.UpdatedDate = DateTime.Now;
+                    lab.UpdatedDateInt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
                     _context.Update(lab);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction("DepartmentLabs", new { departmentId = lab.DeptId });
+                    return RedirectToAction("DepartmentLab", new { departmentId = lab.DeptId });
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -573,6 +687,7 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
             ViewBag.DepartmentId = lab.DeptId;
             return View("~/Views/DepartmentLabs/Edit.cshtml", lab);
         }
+
 
     }
 }

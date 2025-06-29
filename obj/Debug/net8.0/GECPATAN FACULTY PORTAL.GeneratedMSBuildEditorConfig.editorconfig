@@ -104,44 +104,44 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudE1pc3Npb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Github desktop/Website_Team_Database1/Views/DepartmentPeos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBlb3NcQ3JlYXRlLmNzaHRtbA==
+[N:/Github desktop/Website_Team_Database1/Views/DepartmentPeo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBlb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Github desktop/Website_Team_Database1/Views/DepartmentPeos/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBlb3NcRGVsZXRlLmNzaHRtbA==
+[N:/Github desktop/Website_Team_Database1/Views/DepartmentPeo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBlb1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Github desktop/Website_Team_Database1/Views/DepartmentPeos/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBlb3NcRGV0YWlscy5jc2h0bWw=
+[N:/Github desktop/Website_Team_Database1/Views/DepartmentPeo/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBlb1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Github desktop/Website_Team_Database1/Views/DepartmentPeos/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBlb3NcRWRpdC5jc2h0bWw=
+[N:/Github desktop/Website_Team_Database1/Views/DepartmentPeo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBlb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Github desktop/Website_Team_Database1/Views/DepartmentPeos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBlb3NcSW5kZXguY3NodG1s
+[N:/Github desktop/Website_Team_Database1/Views/DepartmentPeo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBlb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Github desktop/Website_Team_Database1/Views/DepartmentPsos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBzb3NcQ3JlYXRlLmNzaHRtbA==
+[N:/Github desktop/Website_Team_Database1/Views/DepartmentPso/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBzb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Github desktop/Website_Team_Database1/Views/DepartmentPsos/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBzb3NcRGVsZXRlLmNzaHRtbA==
+[N:/Github desktop/Website_Team_Database1/Views/DepartmentPso/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBzb1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Github desktop/Website_Team_Database1/Views/DepartmentPsos/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBzb3NcRGV0YWlscy5jc2h0bWw=
+[N:/Github desktop/Website_Team_Database1/Views/DepartmentPso/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBzb1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Github desktop/Website_Team_Database1/Views/DepartmentPsos/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBzb3NcRWRpdC5jc2h0bWw=
+[N:/Github desktop/Website_Team_Database1/Views/DepartmentPso/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBzb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[N:/Github desktop/Website_Team_Database1/Views/DepartmentPsos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBzb3NcSW5kZXguY3NodG1s
+[N:/Github desktop/Website_Team_Database1/Views/DepartmentPso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFBzb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [N:/Github desktop/Website_Team_Database1/Views/DepartmentVision/Create.cshtml]
@@ -182,14 +182,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [N:/Github desktop/Website_Team_Database1/Views/Department/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[N:/Github desktop/Website_Team_Database1/Views/Department/VisionDisplay.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxWaXNpb25EaXNwbGF5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[N:/Github desktop/Website_Team_Database1/Views/Department/VisionForm.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxWaXNpb25Gb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [N:/Github desktop/Website_Team_Database1/Views/FacultyMembers/Create.cshtml]

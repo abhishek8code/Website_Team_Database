@@ -19,11 +19,19 @@ public partial class ApplicationDbContext : IdentityDbContext<Users>
     }
 
     public virtual DbSet<Department> Departments { get; set; }
-    public virtual DbSet<DepartmentIntake> DepartmentIntakes { get; set; } = null!;
-    public virtual DbSet<DepartmentLabs> DepartmentLabs { get; set; } = null!;
-    public virtual DbSet<DepartmentVision> DepartmentVision { get; set; } = null!;
-    public virtual DbSet<DepartmentMission> DepartmentMission { get; set; } = null!;
-    public virtual DbSet<DepartmentPeos> DepartmentPeos { get; set; } = null!;
 
-    public virtual DbSet<DepartmentPsos> DepartmentPsos { get; set; } = null!;
+    public virtual DbSet<DepartmentIntake> DepartmentIntakes { get; set; }
+
+    public virtual DbSet<DepartmentLab> DepartmentLabs { get; set; }
+
+    public virtual DbSet<DepartmentMission> DepartmentMissions { get; set; }
+
+    public virtual DbSet<DepartmentPeo> DepartmentPeos { get; set; }
+
+    public virtual DbSet<DepartmentPso> DepartmentPsos { get; set; }
+
+    public virtual DbSet<DepartmentVision> DepartmentVisions { get; set; }
+
+    
+    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }

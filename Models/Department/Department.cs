@@ -29,12 +29,15 @@ public partial class Department
 
     public long? UpdatedDateInt { get; set; }
 
-    public string? CreatedBy { get; set; }
+    public bool IsDeleted { get; set; }
 
-    public string? UpdatedBy { get; set; }
-
-}
-public partial class Department
-{
     public virtual ICollection<DepartmentIntake> DepartmentIntakes { get; set; } = new List<DepartmentIntake>();
+
+    public virtual ICollection<DepartmentLab> DepartmentLabs { get; set; } = new List<DepartmentLab>();
+
+    public virtual ICollection<DepartmentMission> DepartmentMissions { get; set; } = new List<DepartmentMission>();
+
+    public virtual ICollection<DepartmentPeo> DepartmentPeos { get; set; } = new List<DepartmentPeo>();
+
+    public virtual ICollection<DepartmentPso> DepartmentPsos { get; set; } = new List<DepartmentPso>();
 }

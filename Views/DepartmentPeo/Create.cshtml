@@ -1,0 +1,28 @@
+@model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentPeo
+
+@{
+    ViewData["Title"] = "Add PEOs";
+}
+
+<h4>Add PEO Statement</h4>
+<hr />
+
+<form asp-action="AddPeos" method="post">
+    <input type="hidden" asp-for="DeptId" />
+
+    <div class="form-group">
+        <label asp-for="Peotext" class="control-label">PEO Text</label>
+        <textarea asp-for="Peotext" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Peotext" class="text-danger"></span>
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Add</button>
+    <a asp-action="DepartmentPeo" asp-route-departmentId="@Model.DeptId" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

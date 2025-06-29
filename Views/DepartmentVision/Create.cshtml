@@ -4,14 +4,14 @@
     ViewData["Title"] = "Create DepartmentVision";
 }
 
-<h2>Create DepartmentVision</h2>
+<h2>Create Department Vision</h2>
 
-<form asp-action="Create">
+<form asp-action="ManageVision" method="post">
+    <input type="hidden" asp-for="DeptId" />
     <div class="form-group">
         <label asp-for="VisionText"></label>
-        <input asp-for="VisionText" class="form-control" />
+        <textarea asp-for="VisionText" class="form-control" rows="5"></textarea>
     </div>
-
-    <button type="submit" class="btn btn-success">Create</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-controller="Department" asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>

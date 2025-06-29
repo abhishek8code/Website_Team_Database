@@ -1,14 +1,13 @@
 @model GECPATAN_FACULTY_PORTAL.Models.Department.Department
 
 @{
-    ViewData["Title"] = "Edit Department";
+    ViewData["Title"] = "Create Department";
 }
 
-<h2>Edit Department</h2>
+<h2>Create Department</h2>
 
-<form asp-action="Edit" method="post" enctype="multipart/form-data">
+<form asp-action="Create" method="post" enctype="multipart/form-data">
     @Html.AntiForgeryToken()
-    <input type="hidden" asp-for="Id" />
 
     <div class="form-group">
         <label asp-for="Name" class="control-label"></label>
@@ -17,28 +16,18 @@
     </div>
 
     <div class="form-group">
-        <label>Current Image</label><br />
-        @if (!string.IsNullOrEmpty(Model.Image))
-        {
-            <img src="~/@Model.Image" alt="Current Image" style="max-width:200px;" />
-        }
-    </div>
-
-    <div class="form-group">
-        <label>Upload New Image</label>
+        <label>Upload Image</label>
         <input type="file" name="ImageFile" class="form-control" />
     </div>
 
     <div class="form-group">
         <label asp-for="Slogan" class="control-label"></label>
         <input asp-for="Slogan" class="form-control" />
-        <span asp-validation-for="Slogan" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="Tagline" class="control-label"></label>
         <input asp-for="Tagline" class="form-control" />
-        <span asp-validation-for="Tagline" class="text-danger"></span>
     </div>
 
     <div class="form-group">
@@ -48,39 +37,42 @@
 
     <div class="form-group">
         <label asp-for="About" class="control-label"></label>
-        <textarea asp-for="About" class="form-control"></textarea>
+        <textarea asp-for="About" class="form-control" rows="4"></textarea>
     </div>
 
-    <div class="form-group form-check">
+    <div class="form-check">
         <input asp-for="ShowIntake" class="form-check-input" />
         <label asp-for="ShowIntake" class="form-check-label"></label>
-        <span asp-validation-for="ShowIntake" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="CreatedBy" class="control-label"></label>
-        <input asp-for="CreatedBy" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="UpdatedBy" class="control-label"></label>
-        <input asp-for="UpdatedBy" class="form-control" />
     </div>
 
     <div class="form-group">
         <label asp-for="CreatedDate" class="control-label"></label>
-        <input asp-for="CreatedDate" class="form-control" type="datetime-local" />
+        <input asp-for="CreatedDate" type="datetime-local" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CreatedDateInt" class="control-label"></label>
+        <input asp-for="CreatedDateInt" class="form-control" type="number" />
     </div>
 
     <div class="form-group">
         <label asp-for="UpdatedDate" class="control-label"></label>
-        <input asp-for="UpdatedDate" class="form-control" type="datetime-local" />
+        <input asp-for="UpdatedDate" type="datetime-local" class="form-control" />
     </div>
 
     <div class="form-group">
-        <input type="submit" value="Save" class="btn btn-primary" />
-        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        <label asp-for="UpdatedDateInt" class="control-label"></label>
+        <input asp-for="UpdatedDateInt" class="form-control" type="number" />
     </div>
+
+   @*  <div class="form-group form-check">
+        <input asp-for="Isdeleted" class="form-check-input" />
+        <label asp-for="Isdeleted" class="form-check-label"></label>
+    </div> *@
+
+    <br />
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>
 
 @section Scripts {

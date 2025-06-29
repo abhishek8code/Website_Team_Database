@@ -1860,6 +1860,7 @@ wwwroot\Department\1\Golo.png
 wwwroot\Department\2\Dummmy.jpg
 wwwroot\Department\2\Golo.png
 wwwroot\Department\3\Golo.png
+wwwroot\Department\4\Golo.jpg
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\Labs\1\L202_-_ANJU_VASDEWANI_600x400.jpg

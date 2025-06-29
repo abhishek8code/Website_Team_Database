@@ -122,7 +122,7 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     b.ToTable("DepartmentMission");
                 });
 
-            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentPeos", b =>
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentPeo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -140,7 +140,7 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     b.HasIndex("DeptId");
 
-                    b.ToTable("DepartmentPeos");
+                    b.ToTable("DepartmentPeo");
                 });
 
             modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentPsos", b =>
@@ -411,10 +411,10 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     b.Navigation("Dept");
                 });
 
-            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentPeos", b =>
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentPeo", b =>
                 {
                     b.HasOne("GECPATAN_FACULTY_PORTAL.Models.Department.Department", "Dept")
-                        .WithMany("DepartmentPeos")
+                        .WithMany("DepartmentPeo")
                         .HasForeignKey("DeptId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -490,7 +490,7 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     b.Navigation("DepartmentMission");
 
-                    b.Navigation("DepartmentPeos");
+                    b.Navigation("DepartmentPeo");
 
                     b.Navigation("DepartmentPsos");
                 });

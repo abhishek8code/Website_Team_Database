@@ -1,4 +1,4 @@
-@model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentLabs
+@model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentLab
 @{
     ViewData["Title"] = "Add Lab";
 }
@@ -24,7 +24,7 @@
     </div>
 
     <button type="submit" class="btn btn-success">Add Lab</button>
-    <a asp-action="DepartmentLabs" asp-route-departmentId="@Model.DeptId" class="btn btn-secondary">Cancel</a>
+    <a asp-action="DepartmentLab" asp-route-departmentId="@Model.DeptId" class="btn btn-secondary">Cancel</a>
 </form>
 
 @section Scripts {

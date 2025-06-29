@@ -4,6 +4,15 @@
     ViewData["Title"] = "Edit DepartmentVision";
 }
 
-<h2>Edit DepartmentVision</h2>
+<h2>Edit Department Vision</h2>
 
-<!-- Add Edit content for DepartmentVision -->
+<form asp-action="ManageVision" method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="DeptId" />
+    <div class="form-group">
+        <label asp-for="VisionText"></label>
+        <textarea asp-for="VisionText" class="form-control" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a asp-controller="Department" asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

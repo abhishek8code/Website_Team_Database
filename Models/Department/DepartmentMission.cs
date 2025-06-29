@@ -12,5 +12,15 @@ public partial class DepartmentMission
 
     public string? MissionText { get; set; }
 
+    public DateTime? CreatedDate { get; set; }
+
+    public DateTime? UpdatedDate { get; set; }
+
+    public bool IsDeleted { get; set; }
+
+    public long? CreatedDateInt { get; set; }
+
+    public long? UpdatedDateInt { get; set; }
+
     public virtual Department Dept { get; set; } = null!;
 }
