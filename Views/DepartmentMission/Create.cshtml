@@ -1,7 +1,7 @@
 @model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentMission
 
 @{
-    ViewData["Title"] = "Add Mission";
+    ViewData["Title"] = "Add Department Missions";
 }
 
 <h4>Add Mission Statement</h4>
@@ -18,7 +18,7 @@
 
     <br />
     <button type="submit" class="btn btn-primary">Add</button>
-    <a asp-action="DepartmentMissions" asp-route-departmentId="@Model.DeptId" class="btn btn-secondary">Cancel</a>
+    <a asp-action="DepartmentMission" asp-route-departmentId="@Model.DeptId" class="btn btn-secondary">Cancel</a>
 </form>
 
 @section Scripts {

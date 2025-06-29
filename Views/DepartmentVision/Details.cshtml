@@ -1,14 +1,21 @@
 @model GECPATAN_FACULTY_PORTAL.Models.Department.DepartmentVision
 
 @{
-    ViewData["Title"] = "Department Vision Details";
+    ViewBag.Title = "Department Vision";
+    var departmentId = ViewBag.DepartmentId;
+    var hasVision = ViewBag.HasVision as bool? ?? false;
 }
 
 <h2>Vision for @ViewBag.DepartmentName</h2>
 
-<div class="card">
-    <div class="card-body">
-        <p>@Model.VisionText</p>
-    </div>
-    <a asp-controller="Department" asp-action="ManageVision" asp-route-departmentId="@Model.DeptId" class="btn btn-primary mt-2">Edit Vision</a>
-</div>
+@if (!hasVision)
+{
+    <div class="alert alert-warning">No vision found for this department.</div>
+    <a class="btn btn-primary" href="@Url.Action("ManageVision", "Department", new { departmentId = departmentId })">Add Vision</a>
+}
+else
+{
+    <p>@Model.VisionText</p>
+    <a class="btn btn-warning" href="@Url.Action("ManageVision", "Department", new { departmentId = departmentId })">Edit Vision</a>
+}
+

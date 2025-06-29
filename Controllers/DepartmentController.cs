@@ -351,6 +351,7 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
         {
             if (ModelState.IsValid)
             {
+                ModelState.Remove("Dept");
                 var existing = await _context.DepartmentVisions
                     .FirstOrDefaultAsync(v => v.DeptId == model.DeptId);
 
@@ -385,16 +386,17 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
             var vision = await _context.DepartmentVisions
                 .FirstOrDefaultAsync(v => v.DeptId == departmentId);
 
-            if (vision == null)
-                return Content("No vision found for this department.");
-
             ViewBag.DepartmentName = await _context.Departments
                 .Where(d => d.Id == departmentId)
                 .Select(d => d.Name)
                 .FirstOrDefaultAsync();
 
+            ViewBag.DepartmentId = departmentId;
+            ViewBag.HasVision = vision != null;
+
             return View("~/Views/DepartmentVision/Details.cshtml", vision);
         }
+
 
 
         // GET: Department Mission List
