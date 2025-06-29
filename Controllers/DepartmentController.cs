@@ -422,6 +422,7 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddMission(DepartmentMission mission)
         {
+            ModelState.Remove("Dept");
             if (ModelState.IsValid)
             {
                 mission.CreatedDate = DateTime.Now;
@@ -431,6 +432,14 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
                 _context.Add(mission);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("DepartmentMissions", new { departmentId = mission.DeptId });
+            }
+            foreach (var key in ModelState.Keys)
+            {
+                var errors = ModelState[key].Errors;
+                foreach (var error in errors)
+                {
+                    Console.WriteLine($"ModelState Error on '{key}': {error.ErrorMessage}");
+                }
             }
 
             ViewBag.DepartmentId = mission.DeptId;
