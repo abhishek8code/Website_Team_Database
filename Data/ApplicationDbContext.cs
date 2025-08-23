@@ -10,7 +10,14 @@ namespace GECPATAN_FACULTY_PORTAL.Data
             : base(options)
         {
         }
+        public DbSet<FacultyMember> FacultyMember { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<DepartmentIntake> DepartmentIntakes { get; set; }
+        public DbSet<DepartmentLab> DepartmentLabs { get; set; }
+        public DbSet<DepartmentMission> DepartmentMissions { get; set; }
+        public DbSet<DepartmentPeo> DepartmentPeos { get; set; }
+        public DbSet<DepartmentPso> DepartmentPsos { get; set; }
+        public DbSet<DepartmentVision> DepartmentVisions { get; set; }
 
-        public DbSet<GECPATAN_FACULTY_PORTAL.Models.FacultyMember> FacultyMember { get; set; } = default!;
     }
 }
