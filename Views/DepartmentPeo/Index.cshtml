@@ -1,71 +1,31 @@
 @model IEnumerable<GECPATAN_FACULTY_PORTAL.Models.DepartmentPeo>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Department Peos";
 }
 
-<h1>Index</h1>
+<h3>PEO Statements for <strong class="text-primary">@ViewBag.DepartmentName</strong></h3>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.PeoText)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsDeleted)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDateInt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDateInt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Dept)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.PeoText)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsDeleted)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDateInt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDateInt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Dept.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+<a asp-action="AddPeos"
+   asp-controller="Department"
+   asp-route-departmentId="@ViewBag.DepartmentId"
+   class="btn btn-success mb-3">
+    + Add PEOs
+</a>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No missions have been added yet.</div>
 }
-    </tbody>
-</table>
+else
+{
+    <ul class="list-group">
+        @foreach (var item in Model)
+        {
+            <li class="list-group-item">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                @item.PeoText
+            </li>
+        }
+    </ul>
+}

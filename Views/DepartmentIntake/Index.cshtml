@@ -1,77 +1,32 @@
 @model IEnumerable<GECPATAN_FACULTY_PORTAL.Models.DepartmentIntake>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Department Intake Records";
 }
 
-<h1>Index</h1>
+<h4>Intake Records for Department: <strong class="text-primary">@ViewBag.DepartmentName</strong></h4>
+<hr />
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="AddIntake" asp-route-departmentId="@ViewBag.DepartmentId" class="btn btn-primary">+ Add New Intake</a>
 </p>
-<table class="table">
+
+<table class="table table-bordered">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.IntakeCount)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IntakeYear)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsDeleted)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDateInt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDateInt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Dept)
-            </th>
-            <th></th>
+            <th>Department</th>
+            <th>Year</th>
+            <th>Intake Count</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.IntakeCount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IntakeYear)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsDeleted)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDateInt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDateInt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Dept.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Dept.Name</td>
+                <td>@(item.IntakeYear?.ToString("yyyy"))</td>
+                <td>@item.IntakeCount</td>
+            </tr>
+        }
     </tbody>
 </table>

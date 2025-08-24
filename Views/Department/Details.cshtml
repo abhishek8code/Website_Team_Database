@@ -4,87 +4,15 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
-
+<h2>Department Details</h2>
+<table class="table">
+    <tr><th>Name</th><td>@Model.Name</td></tr>
+    <tr><th>Slogan</th><td>@Model.Slogan</td></tr>
+    <tr><th>Deparrtment Image</th><td>@Model.Image</td></tr>
+    <tr><th>Tagline</th><td>@Model.Tagline</td></tr>
+    <tr><th>About</th><td>@Model.About</td></tr>
+</table>
 <div>
-    <h4>Department</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Image)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Slogan)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Slogan)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Tagline)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Tagline)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TitleImage)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TitleImage)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.About)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.About)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ShowIntake)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ShowIntake)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatedDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedDateInt)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatedDateInt)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UpdatedDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UpdatedDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UpdatedDateInt)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UpdatedDateInt)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IsDeleted)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IsDeleted)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
 </div>

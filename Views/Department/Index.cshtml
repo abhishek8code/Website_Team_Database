@@ -1,101 +1,63 @@
 @model IEnumerable<GECPATAN_FACULTY_PORTAL.Models.Department>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Department List";
 }
 
-<h1>Index</h1>
+<h2>Department List</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<p><a asp-action="Create" class="btn btn-primary">Create New</a></p>
+
+<table class="table table-bordered table-striped">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Image)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Slogan)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tagline)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TitleImage)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.About)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ShowIntake)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDateInt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDateInt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsDeleted)
-            </th>
-            <th></th>
+            <th>Name</th>
+            <th>Slogan</th>
+            <th>Image</th>
+            <th>Tagline</th>
+            <th>About</th>
+            <th>Show Intake</th>
+            <th>Actions</th>
+            <th>Other Details</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Image)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Slogan)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tagline)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TitleImage)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.About)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShowIntake)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDateInt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDateInt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsDeleted)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Slogan</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.Image))
+                    {
+                        <img src="~/@item.Image" alt="Department Image" style="max-width: 100px; max-height: 60px;" />
+                    }
+                    else
+                    {
+                        <span class="text-muted">No Image</span>
+                    }
+                </td>
+                <td>@item.Tagline</td>
+                <td>@item.About</td>
+                <td>@item.ShowIntake</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+               
+                <td>
+                    <a asp-action="DepartmentPeo" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-primary mb-1">View PEOs</a><br />
+                    <a asp-action="DepartmentPsos" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-dark mb-1">View PSOs</a><br />
+                    <a asp-action="DepartmentLab" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-success">View Labs</a>
+                    <a asp-action="DepartmentIntakes" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-primary">View Intakes</a>
+                    <a asp-action="ViewVision" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-secondary">View Vision</a>
+                    <a asp-action="DepartmentMissions" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-info">View Mission</a>
+
+                </td>
+
+               
+            </tr>
+        }
     </tbody>
 </table>

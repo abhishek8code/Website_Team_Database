@@ -1,69 +1,45 @@
 @model GECPATAN_FACULTY_PORTAL.Models.DepartmentIntake
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Intake";
 }
 
-<h1>Edit</h1>
+<h4>Edit Department Intake</h4>
 
-<h4>DepartmentIntake</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="DeptId" class="control-label"></label>
-                <select asp-for="DeptId" class="form-control" asp-items="ViewBag.DeptId"></select>
-                <span asp-validation-for="DeptId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IntakeCount" class="control-label"></label>
-                <input asp-for="IntakeCount" class="form-control" />
-                <span asp-validation-for="IntakeCount" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IntakeYear" class="control-label"></label>
-                <input asp-for="IntakeYear" class="form-control" />
-                <span asp-validation-for="IntakeYear" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedDate" class="control-label"></label>
-                <input asp-for="CreatedDate" class="form-control" />
-                <span asp-validation-for="CreatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedDate" class="control-label"></label>
-                <input asp-for="UpdatedDate" class="form-control" />
-                <span asp-validation-for="UpdatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsDeleted" /> @Html.DisplayNameFor(model => model.IsDeleted)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedDateInt" class="control-label"></label>
-                <input asp-for="CreatedDateInt" class="form-control" />
-                <span asp-validation-for="CreatedDateInt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedDateInt" class="control-label"></label>
-                <input asp-for="UpdatedDateInt" class="form-control" />
-                <span asp-validation-for="UpdatedDateInt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+<form asp-action="EditIntake" method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="DeptId" />
+
+    <div class="form-group">
+        <label asp-for="IntakeYear" class="control-label">Intake Year</label>
+        <input asp-for="IntakeYear" class="form-control" type="date" />
+        <span asp-validation-for="IntakeYear" class="text-danger"></span>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div class="form-group">
+        <label asp-for="IntakeCount" class="control-label">Intake Count</label>
+        <input asp-for="IntakeCount" class="form-control" />
+        <span asp-validation-for="IntakeCount" class="text-danger"></span>
+    </div>
+
+    @if (Model.UpdatedDate != null)
+    {
+        <div class="form-group">
+            <label>Last Updated</label>
+            <input class="form-control" value="@Model.UpdatedDate?.ToString("g")" disabled />
+        </div>
+    }
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Update</button>
+        <a asp-action="DepartmentIntakes" asp-route-departmentId="@Model.DeptId" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

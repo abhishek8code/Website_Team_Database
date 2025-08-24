@@ -1,62 +1,28 @@
 @model GECPATAN_FACULTY_PORTAL.Models.DepartmentPso
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Add PSO";
 }
 
-<h1>Create</h1>
-
-<h4>DepartmentPso</h4>
+<h4>Add PSO Statement</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="DeptId" class="control-label"></label>
-                <select asp-for="DeptId" class ="form-control" asp-items="ViewBag.DeptId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="PsoText" class="control-label"></label>
-                <input asp-for="PsoText" class="form-control" />
-                <span asp-validation-for="PsoText" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedDate" class="control-label"></label>
-                <input asp-for="CreatedDate" class="form-control" />
-                <span asp-validation-for="CreatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedDate" class="control-label"></label>
-                <input asp-for="UpdatedDate" class="form-control" />
-                <span asp-validation-for="UpdatedDate" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsDeleted" /> @Html.DisplayNameFor(model => model.IsDeleted)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedDateInt" class="control-label"></label>
-                <input asp-for="CreatedDateInt" class="form-control" />
-                <span asp-validation-for="CreatedDateInt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedDateInt" class="control-label"></label>
-                <input asp-for="UpdatedDateInt" class="form-control" />
-                <span asp-validation-for="UpdatedDateInt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<form asp-action="AddPsos" method="post">
+    <input type="hidden" asp-for="DeptId" />
+
+    <div class="form-group">
+        <label asp-for="PsoText" class="control-label">PSO Text</label>
+        <textarea asp-for="PsoText" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="PsoText" class="text-danger"></span>
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Add</button>
+    <a asp-action="DepartmentPsos" asp-route-departmentId="@Model.DeptId" class="btn btn-secondary">Cancel</a>
+</form>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
