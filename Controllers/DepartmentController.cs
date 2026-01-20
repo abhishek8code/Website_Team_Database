@@ -3,7 +3,7 @@ using GECPATAN_FACULTY_PORTAL.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-
+using Ganss.Xss;
 namespace GECPATAN_FACULTY_PORTAL.Controllers
 {
     public class DepartmentController : Controller
@@ -46,6 +46,8 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Sanitize before saving
+                department.About = SanitizeHtml(department.About);
                 // System-generated metadata
                 var now = DateTime.UtcNow;
                 department.CreatedDate = now;
@@ -82,6 +84,36 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
             }
 
             return View(department);
+        }
+        private string SanitizeHtml(string about)
+        {
+            if (string.IsNullOrWhiteSpace(about))
+                return string.Empty;
+
+            var sanitizer = new HtmlSanitizer();
+
+            // allow basic formatting tags
+            sanitizer.AllowedTags.Add("p");
+            sanitizer.AllowedTags.Add("b");
+            sanitizer.AllowedTags.Add("i");
+            sanitizer.AllowedTags.Add("u");
+            sanitizer.AllowedTags.Add("ul");
+            sanitizer.AllowedTags.Add("ol");
+            sanitizer.AllowedTags.Add("li");
+            sanitizer.AllowedTags.Add("a");
+            sanitizer.AllowedTags.Add("img");
+            sanitizer.AllowedTags.Add("h1");
+            sanitizer.AllowedTags.Add("h2");
+            sanitizer.AllowedTags.Add("h3");
+            sanitizer.AllowedTags.Add("br");
+
+            // allow attributes for links & images
+            sanitizer.AllowedAttributes.Add("href");
+            sanitizer.AllowedAttributes.Add("src");
+            sanitizer.AllowedAttributes.Add("alt");
+            sanitizer.AllowedAttributes.Add("title");
+
+            return sanitizer.Sanitize(about);
         }
 
         // GET: Department/Edit/5
