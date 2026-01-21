@@ -224,5 +224,69 @@ public class FacultyController : Controller
 
         return RedirectToAction(nameof(Training), new { id = facultyId });
     }
+    public async Task<IActionResult> Publication(int id) // id = FacultyId
+    {
+        ViewBag.FacultyId = id;
+
+        var list = await _context.Publications
+            .Where(x => x.FacultyId == id)
+            .OrderBy(x => x.SrNo)
+            .ToListAsync();
+
+        return View(list);
+    }
+    public IActionResult CreatePublication(int id) // id = FacultyId
+    {
+        ViewBag.FacultyId = id;
+        return View();
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> CreatePublication(Publication model)
+    {
+        if (!ModelState.IsValid)
+        {
+            ViewBag.FacultyId = model.FacultyId;
+            return View(model);
+        }
+
+        _context.Publications.Add(model);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Publication), new { id = model.FacultyId });
+    }
+    public async Task<IActionResult> EditPublication(int id)
+    {
+        var pub = await _context.Publications.FindAsync(id);
+        if (pub == null)
+            return NotFound();
+
+        return View(pub);
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> EditPublication(Publication model)
+    {
+        if (!ModelState.IsValid)
+            return View(model);
+
+        _context.Update(model);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Publication), new { id = model.FacultyId });
+    }
+    public async Task<IActionResult> DeletePublication(int id)
+    {
+        var pub = await _context.Publications.FindAsync(id);
+        if (pub == null)
+            return NotFound();
+
+        int facultyId = pub.FacultyId;
+
+        _context.Publications.Remove(pub);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Publication), new { id = facultyId });
+    }
 
 }
