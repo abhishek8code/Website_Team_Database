@@ -1,0 +1,92 @@
+﻿@model GECPATAN_FACULTY_PORTAL.Models.Faculty
+
+@{
+    ViewData["Title"] = "Edit Faculty";
+}
+
+<h2>Edit Faculty</h2>
+
+<form asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+
+    <!-- Hidden Primary Key -->
+    <input type="hidden" asp-for="FacultyId" />
+
+    <div class="card card-warning">
+        <div class="card-header">
+            <h3 class="card-title">Edit Faculty Details</h3>
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="form-group mb-2">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label asp-for="Designation"></label>
+                        <input asp-for="Designation" class="form-control" />
+                        <span asp-validation-for="Designation" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label asp-for="DateOfJoining"></label>
+                        <input asp-for="DateOfJoining" type="date" class="form-control" />
+                        <span asp-validation-for="DateOfJoining" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label asp-for="Qualification"></label>
+                        <input asp-for="Qualification" class="form-control" />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label asp-for="AreaOfInterest"></label>
+                        <input asp-for="AreaOfInterest" class="form-control" />
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="form-group mb-2">
+                        <label asp-for="Website"></label>
+                        <input asp-for="Website" class="form-control" />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label asp-for="DeptId">Department ID</label>
+                        <input asp-for="DeptId" type="number" class="form-control" />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label asp-for="SeniorityOrder"></label>
+                        <input asp-for="SeniorityOrder" type="number" class="form-control" />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label>
+                            <input asp-for="IsTeaching" />
+                            Teaching Staff
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-success">Update</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,84 @@
+﻿@model GECPATAN_FACULTY_PORTAL.Models.Faculty
+
+@{
+    ViewData["Title"] = "Faculty Details";
+}
+
+<h2>Faculty Details</h2>
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Basic Information</h3>
+    </div>
+
+    <div class="card-body">
+        <table class="table table-bordered">
+            <tr>
+                <th width="30%">Name</th>
+                <td>@Model.Name</td>
+            </tr>
+            <tr>
+                <th>Designation</th>
+                <td>@Model.Designation</td>
+            </tr>
+            <tr>
+                <th>Date of Joining</th>
+                <td>
+                    @(Model.DateOfJoining != DateTime.MinValue
+                                        ? Model.DateOfJoining.ToString("dd-MM-yyyy")
+                                        : "-")
+                </td>
+            </tr>
+            <tr>
+                <th>Qualification</th>
+                <td>@Model.Qualification</td>
+            </tr>
+            <tr>
+                <th>Area of Interest</th>
+                <td>@Model.AreaOfInterest</td>
+            </tr>
+            <tr>
+                <th>Teaching Staff</th>
+                <td>@(Model.IsTeaching ? "Yes" : "No")</td>
+            </tr>
+            <tr>
+                <th>Website</th>
+                <td>
+                    @if (!string.IsNullOrEmpty(Model.Website))
+                    {
+                        <a href="@Model.Website" target="_blank">@Model.Website</a>
+                    }
+                    else
+                    {
+                        <span>-</span>
+                    }
+                </td>
+            </tr>
+            <tr>
+                <th>Department ID</th>
+                <td>@Model.DeptId</td>
+            </tr>
+            <tr>
+                <th>Seniority Order</th>
+                <td>@Model.SeniorityOrder</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>
+                    <span class="badge @(Model.IsActive ? "badge-success" : "badge-danger")">
+                        @(Model.IsActive ? "Active" : "Inactive")
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card-footer">
+        <a asp-action="Edit" asp-route-id="@Model.FacultyId" class="btn btn-warning">
+            Edit
+        </a>
+        <a asp-action="Index" class="btn btn-secondary">
+            Back to List
+        </a>
+    </div>
+</div>

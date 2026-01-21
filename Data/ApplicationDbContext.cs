@@ -10,6 +10,13 @@ namespace GECPATAN_FACULTY_PORTAL.Data
             : base(options)
         {
         }
+        public DbSet<Faculty> Faculties { get; set; }
+        public DbSet<PersonalDetail> PersonalDetails { get; set; }
+        public DbSet<EducationalQualification> EducationalQualifications { get; set; }
+        public DbSet<ProfessionalExperience> ProfessionalExperiences { get; set; }
+        public DbSet<TrainingAndWorkshop> TrainingAndWorkshops { get; set; }
+        public DbSet<Publication> Publications { get; set; }
+
 
         public DbSet<GECPATAN_FACULTY_PORTAL.Models.FacultyMember> FacultyMember { get; set; } = default!;
     }
