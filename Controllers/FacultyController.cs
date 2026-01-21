@@ -161,5 +161,68 @@ public class FacultyController : Controller
 
         return RedirectToAction(nameof(Experience), new { id = facultyId });
     }
+    public async Task<IActionResult> Training(int id) // id = FacultyId
+    {
+        ViewBag.FacultyId = id;
+
+        var list = await _context.TrainingAndWorkshops
+            .Where(x => x.FacultyId == id)
+            .ToListAsync();
+
+        return View(list);
+    }
+    public IActionResult CreateTraining(int id) // id = FacultyId
+    {
+        ViewBag.FacultyId = id;
+        return View();
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> CreateTraining(TrainingAndWorkshop model)
+    {
+        if (!ModelState.IsValid)
+        {
+            ViewBag.FacultyId = model.FacultyId;
+            return View(model);
+        }
+
+        _context.TrainingAndWorkshops.Add(model);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Training), new { id = model.FacultyId });
+    }
+    public async Task<IActionResult> EditTraining(int id)
+    {
+        var training = await _context.TrainingAndWorkshops.FindAsync(id);
+        if (training == null)
+            return NotFound();
+
+        return View(training);
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> EditTraining(TrainingAndWorkshop model)
+    {
+        if (!ModelState.IsValid)
+            return View(model);
+
+        _context.Update(model);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Training), new { id = model.FacultyId });
+    }
+    public async Task<IActionResult> DeleteTraining(int id)
+    {
+        var training = await _context.TrainingAndWorkshops.FindAsync(id);
+        if (training == null)
+            return NotFound();
+
+        int facultyId = training.FacultyId;
+
+        _context.TrainingAndWorkshops.Remove(training);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Training), new { id = facultyId });
+    }
 
 }

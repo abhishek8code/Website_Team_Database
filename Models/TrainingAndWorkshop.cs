@@ -9,7 +9,6 @@ namespace GECPATAN_FACULTY_PORTAL.Models
         public string Title { get; set; }
         public string OrganizedBy { get; set; }
         public string Date { get; set; }
-
         public int FacultyId { get; set; }
         [ValidateNever]
         public Faculty Faculty { get; set; }
