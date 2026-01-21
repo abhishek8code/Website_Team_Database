@@ -98,4 +98,68 @@ public class FacultyController : Controller
         }
         return RedirectToAction(nameof(Index));
     }
+    public async Task<IActionResult> Experience(int id) // id = FacultyId
+    {
+        ViewBag.FacultyId = id;
+
+        var list = await _context.ProfessionalExperiences
+            .Where(x => x.FacultyId == id)
+            .ToListAsync();
+
+        return View(list);
+    }
+    public IActionResult CreateExperience(int id) // id = FacultyId
+    {
+        ViewBag.FacultyId = id;
+        return View();
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> CreateExperience(ProfessionalExperience model)
+    {
+        if (!ModelState.IsValid)
+        {
+            ViewBag.FacultyId = model.FacultyId;
+            return View(model);
+        }
+
+        _context.ProfessionalExperiences.Add(model);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Experience), new { id = model.FacultyId });
+    }
+    public async Task<IActionResult> EditExperience(int id)
+    {
+        var exp = await _context.ProfessionalExperiences.FindAsync(id);
+        if (exp == null)
+            return NotFound();
+
+        return View(exp);
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> EditExperience(ProfessionalExperience model)
+    {
+        if (!ModelState.IsValid)
+            return View(model);
+
+        _context.Update(model);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Experience), new { id = model.FacultyId });
+    }
+    public async Task<IActionResult> DeleteExperience(int id)
+    {
+        var exp = await _context.ProfessionalExperiences.FindAsync(id);
+        if (exp == null)
+            return NotFound();
+
+        int facultyId = exp.FacultyId;
+
+        _context.ProfessionalExperiences.Remove(exp);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Experience), new { id = facultyId });
+    }
+
 }

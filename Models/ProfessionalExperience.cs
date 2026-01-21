@@ -1,4 +1,6 @@
-﻿namespace GECPATAN_FACULTY_PORTAL.Models
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+
+namespace GECPATAN_FACULTY_PORTAL.Models
 {
     public class ProfessionalExperience
     {
@@ -9,7 +11,9 @@
         public string Duration { get; set; }
 
         public int FacultyId { get; set; }
+        [ValidateNever]
         public Faculty Faculty { get; set; }
+
     }
 
 }
