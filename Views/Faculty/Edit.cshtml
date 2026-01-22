@@ -1,0 +1,102 @@
+﻿@model GECPATAN_FACULTY_PORTAL.Models.Faculty
+
+@{
+    ViewData["Title"] = "Edit Faculty";
+}
+
+<h2>Edit Faculty</h2>
+
+<form asp-action="Edit"
+      method="post"
+      enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="FacultyId" />
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group mb-2">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+
+            <div class="form-group mb-2">
+                <label asp-for="Designation"></label>
+                <input asp-for="Designation" class="form-control" />
+            </div>
+
+            <div class="form-group mb-2">
+                <label asp-for="DateOfJoining"></label>
+                <input asp-for="DateOfJoining" type="date" class="form-control" />
+            </div>
+
+            <div class="form-group mb-2">
+                <label asp-for="Qualification"></label>
+                <input asp-for="Qualification" class="form-control" />
+            </div>
+
+            <!-- CURRENT PHOTO -->
+            @if (!string.IsNullOrEmpty(Model.ImagePath))
+            {
+                <div class="mb-2">
+                    <label>Current Photo</label><br />
+                    <img src="@Model.ImagePath"
+                         style="height:120px;border-radius:8px;"
+                         class="img-thumbnail" />
+                </div>
+            }
+
+            <!-- CHANGE PHOTO -->
+            <div class="form-group mb-2">
+                <label>Change Photo</label>
+                <input type="file"
+                       name="Photo"
+                       class="form-control"
+                       accept=".jpg,.jpeg,.png" />
+            </div>
+
+            <div class="form-group mb-2">
+                <label asp-for="AreaOfInterest"></label>
+                <input asp-for="AreaOfInterest" class="form-control" />
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="form-group mb-2">
+                <label asp-for="Website"></label>
+                <input asp-for="Website" class="form-control" />
+            </div>
+
+            <div class="form-group mb-2">
+                <label asp-for="DeptId"></label>
+                <input asp-for="DeptId" type="number" class="form-control" />
+            </div>
+
+            <div class="form-group mb-2">
+                <label asp-for="SeniorityOrder"></label>
+                <input asp-for="SeniorityOrder" type="number" class="form-control" />
+            </div>
+
+            <div class="form-group mb-3">
+                <label>
+                    <input asp-for="IsTeaching" />
+                    Teaching Staff
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+    <input type="hidden" asp-for="IsActive" />
+
+    <button type="submit" class="btn btn-success">Update</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+    

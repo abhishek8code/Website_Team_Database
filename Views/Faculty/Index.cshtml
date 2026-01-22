@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Faculty>
+
+<h2>Faculty List</h2>
+
+<a asp-action="Create" class="btn btn-primary">Add Faculty</a>
+
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Joining Date</th>
+            <th>Photo</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Designation</td>
+                <td>@item.DateOfJoining.ToShortDateString()</td>
+                <td>
+                    <img src="@(string.IsNullOrEmpty(item.ImagePath)
+                                 ? Url.Content("~/images/no-photo.png")
+                                 : item.ImagePath)"
+                         alt="Faculty Photo"
+                         style="height:50px;width:50px;
+                    object-fit:cover;
+                    border-radius:50%;
+                    border:1px solid #ccc;" />
+                </td>
+
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.FacultyId">View</a> |
+                    <a asp-action="Edit" asp-route-id="@item.FacultyId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.FacultyId"
+                       onclick="return confirm('Are you sure?')">Delete</a>
+                    <a asp-controller="Faculty"
+                       asp-action="Experience"
+                       asp-route-id="@item.FacultyId"
+                       class="btn btn-sm btn-info">
+                        Experience
+                    </a>
+                    <a asp-controller="Faculty"
+                       asp-action="Training"
+                       asp-route-id="@item.FacultyId"
+                       class="btn btn-sm btn-warning">
+                        Training
+                    </a>
+                    <a asp-controller="Faculty"
+                       asp-action="Publication"
+                       asp-route-id="@item.FacultyId"
+                       class="btn btn-sm btn-dark">
+                        Publication
+                    </a>
+
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

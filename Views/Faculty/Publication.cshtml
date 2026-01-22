@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Publication>
+
+<h3>Publications</h3>
+
+<a asp-action="CreatePublication"
+   asp-route-id="@ViewBag.FacultyId"
+   class="btn btn-primary mb-2">
+    Add Publication
+</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Sr No</th>
+            <th>Title</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.SrNo</td>
+                <td>@item.Title</td>
+                <td>
+                    <a asp-action="EditPublication"
+                       asp-route-id="@item.PublicationId">
+                        Edit
+                    </a> |
+                    <a asp-action="DeletePublication"
+                       asp-route-id="@item.PublicationId"
+                       onclick="return confirm('Delete this publication?')">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Index" class="btn btn-secondary">
+    Back to Faculty List
+</a>

@@ -1,0 +1,29 @@
+﻿@model ProfessionalExperience
+
+<form asp-action="CreateExperience" method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="FacultyId" value="@ViewBag.FacultyId" />
+
+    <div class="form-group">
+        <label>Position</label>
+        <input asp-for="Position" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Organization</label>
+        <input asp-for="Organization" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Duration</label>
+        <input asp-for="Duration" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-action="Experience"
+       asp-route-id="@ViewBag.FacultyId"
+       class="btn btn-secondary">
+        Cancel
+    </a>
+</form>

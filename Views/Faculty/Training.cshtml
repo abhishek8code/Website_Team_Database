@@ -1,0 +1,45 @@
+﻿@model IEnumerable<TrainingAndWorkshop>
+
+<h3>Training & Workshops</h3>
+
+<a asp-action="CreateTraining"
+   asp-route-id="@ViewBag.FacultyId"
+   class="btn btn-primary mb-2">
+    Add Training
+</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Organized By</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.OrganizedBy</td>
+                <td>@item.Date</td>
+                <td>
+                    <a asp-action="EditTraining"
+                       asp-route-id="@item.TrainingAndWorkshopId">
+                        Edit
+                    </a> |
+                    <a asp-action="DeleteTraining"
+                       asp-route-id="@item.TrainingAndWorkshopId"
+                       onclick="return confirm('Delete this record?')">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Index" class="btn btn-secondary">
+    Back to Faculty List
+</a>

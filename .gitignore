@@ -1,53 +1,77 @@
-# Build results
-bin/
-obj/
-out/
-bin\
-obj\
-out\
-
-# User-specific files
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-
-# Logs
-*.log
-
-# OS-specific files
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# Database files (local only)
-*.mdf
-*.ldf
-*.ndf
-*.bak
-*.db
-*.dll
-
-# Visual Studio
+# =========================
+# Visual Studio / VS Code
+# =========================
 .vs/
 .vscode/
 
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Build results
+# =========================
+bin/
+obj/
+out/
+
+# =========================
+# ASP.NET Core
+# =========================
+appsettings.Development.json
+appsettings.Local.json
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS generated files
+# =========================
+[Dd]esktop.ini
+Thumbs.db
+*.DS_Store
+
+# =========================
+# Rider / ReSharper
+# =========================
+.idea/
+*.DotSettings.user
+
+# =========================
 # NuGet
-*.nupkg
+# =========================
 packages/
+*.nupkg
 *.snupkg
 
-# Entity Framework
-# (IMPORTANT: DO NOT ignore the Migrations folder itself!)
-# Ignore if generated in wrong location accidentally:
-Migrations/bin/
-Migrations/obj/
+# =========================
+# Publish output
+# =========================
+**/wwwroot/lib/
+**/publish/
 
-# Others
-*.cache
-*.zip
-*.7z
-*.tar
-*.gz
-*.DS_Store
+# =========================
+# Environment files
+# =========================
+.env
+.env.*
+
+# =========================
+# Database files (local only)
+# =========================
+*.mdf
+*.ldf
+
+# =========================
+# Node (if using frontend inside project)
+# =========================
+node_modules/
+
+# =========================
+# Coverage
+# =========================
+coverage/
