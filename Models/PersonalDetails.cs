@@ -1,6 +1,6 @@
 ﻿namespace GECPATAN_FACULTY_PORTAL.Models
 {
-    public class PersonalDetail
+    public class PersonalDetail:BaseEntity
     {
         public int PersonalDetailId { get; set; }
 

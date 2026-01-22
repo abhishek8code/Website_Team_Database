@@ -1,6 +1,6 @@
 ﻿namespace GECPATAN_FACULTY_PORTAL.Models
 {
-    public class EducationalQualification
+    public class EducationalQualification:BaseEntity
     {
         public int EducationalQualificationId { get; set; }
 

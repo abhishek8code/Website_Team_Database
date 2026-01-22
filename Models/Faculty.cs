@@ -2,7 +2,7 @@
 
 namespace GECPATAN_FACULTY_PORTAL.Models
 {
-    public class Faculty
+    public class Faculty:BaseEntity
     {
         public int FacultyId { get; set; }
 

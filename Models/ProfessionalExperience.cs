@@ -2,7 +2,7 @@
 
 namespace GECPATAN_FACULTY_PORTAL.Models
 {
-    public class ProfessionalExperience
+    public class ProfessionalExperience:BaseEntity
     {
         public int ProfessionalExperienceId { get; set; }
 

@@ -4,6 +4,7 @@ using GECPATAN_FACULTY_PORTAL.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GECPATAN_FACULTY_PORTAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260122071639_AddAuditAndSoftDeleteToFaculty")]
+    partial class AddAuditAndSoftDeleteToFaculty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,21 +33,12 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EducationalQualificationId"));
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
                     b.Property<string>("Degree")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("FacultyId")
                         .HasColumnType("int");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
 
                     b.Property<string>("Specialization")
                         .IsRequired()
@@ -53,12 +47,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     b.Property<string>("University")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
 
                     b.Property<string>("Year")
                         .IsRequired()
@@ -146,12 +134,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
                     b.Property<string>("Department")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -162,15 +144,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     b.Property<int>("FacultyId")
                         .HasColumnType("int");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
 
                     b.HasKey("PersonalDetailId");
 
@@ -188,21 +161,12 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProfessionalExperienceId"));
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
                     b.Property<string>("Duration")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("FacultyId")
                         .HasColumnType("int");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
 
                     b.Property<string>("Organization")
                         .IsRequired()
@@ -211,12 +175,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     b.Property<string>("Position")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
 
                     b.HasKey("ProfessionalExperienceId");
 
@@ -233,17 +191,8 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PublicationId"));
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
                     b.Property<int>("FacultyId")
                         .HasColumnType("int");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
 
                     b.Property<int>("SrNo")
                         .HasColumnType("int");
@@ -251,12 +200,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
 
                     b.HasKey("PublicationId");
 
@@ -273,21 +216,12 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TrainingAndWorkshopId"));
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
                     b.Property<string>("Date")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("FacultyId")
                         .HasColumnType("int");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
 
                     b.Property<string>("OrganizedBy")
                         .IsRequired()
@@ -296,12 +230,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
 
                     b.HasKey("TrainingAndWorkshopId");
 

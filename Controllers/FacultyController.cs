@@ -80,7 +80,6 @@ public class FacultyController : Controller
         {
             faculty.ImagePath = null; // optional, safe
         }
-
         // 🔹 Save Faculty
         _context.Faculties.Add(faculty);
         await _context.SaveChangesAsync();
@@ -159,16 +158,21 @@ public class FacultyController : Controller
         return RedirectToAction(nameof(Index));
     }
 
-    // DELETE (Soft Delete)
     public async Task<IActionResult> Delete(int id)
     {
         var faculty = await _context.Faculties.FindAsync(id);
-        if (faculty != null)
-        {
-            faculty.IsActive = false;
-            _context.Update(faculty);
-            await _context.SaveChangesAsync();
-        }
+        if (faculty == null)
+            return NotFound();
+
+        faculty.IsDeleted = true;
+        faculty.IsActive = false;
+
+        //faculty.UpdatedDate = DateTime.Now;
+        //faculty.UpdatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
+
+        _context.Update(faculty);
+        await _context.SaveChangesAsync();
+
         return RedirectToAction(nameof(Index));
     }
     public async Task<IActionResult> Experience(int id) // id = FacultyId
@@ -227,12 +231,12 @@ public class FacultyController : Controller
         if (exp == null)
             return NotFound();
 
-        int facultyId = exp.FacultyId;
+        exp.IsDeleted = true;
 
-        _context.ProfessionalExperiences.Remove(exp);
+        _context.Update(exp);
         await _context.SaveChangesAsync();
 
-        return RedirectToAction(nameof(Experience), new { id = facultyId });
+        return RedirectToAction(nameof(Experience), new { id = exp.FacultyId });
     }
     public async Task<IActionResult> Training(int id) // id = FacultyId
     {
@@ -290,13 +294,14 @@ public class FacultyController : Controller
         if (training == null)
             return NotFound();
 
-        int facultyId = training.FacultyId;
+        training.IsDeleted = true;
 
-        _context.TrainingAndWorkshops.Remove(training);
+        _context.Update(training);
         await _context.SaveChangesAsync();
 
-        return RedirectToAction(nameof(Training), new { id = facultyId });
+        return RedirectToAction(nameof(Training), new { id = training.FacultyId });
     }
+
     public async Task<IActionResult> Publication(int id) // id = FacultyId
     {
         ViewBag.FacultyId = id;
@@ -354,12 +359,12 @@ public class FacultyController : Controller
         if (pub == null)
             return NotFound();
 
-        int facultyId = pub.FacultyId;
+        pub.IsDeleted = true;
 
-        _context.Publications.Remove(pub);
+        _context.Update(pub);
         await _context.SaveChangesAsync();
 
-        return RedirectToAction(nameof(Publication), new { id = facultyId });
+        return RedirectToAction(nameof(Publication), new { id = pub.FacultyId });
     }
 
 }
