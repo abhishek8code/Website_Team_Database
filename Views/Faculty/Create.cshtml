@@ -6,7 +6,9 @@
 
 <h2>Add Faculty</h2>
 
-<form asp-action="Create" method="post">
+<form asp-action="Create"
+      method="post"
+      enctype="multipart/form-data">
     @Html.AntiForgeryToken()
 
     <div class="row">
@@ -26,13 +28,24 @@
 
             <div class="form-group mb-2">
                 <label asp-for="DateOfJoining"></label>
-                <input asp-for="DateOfJoining" type="date" class="form-control" />
+                <input asp-for="DateOfJoining"
+                       type="date"
+                       class="form-control" />
                 <span asp-validation-for="DateOfJoining" class="text-danger"></span>
             </div>
 
             <div class="form-group mb-2">
                 <label asp-for="Qualification"></label>
                 <input asp-for="Qualification" class="form-control" />
+            </div>
+
+            <!-- ✅ FACULTY PHOTO -->
+            <div class="form-group mb-2">
+                <label>Faculty Photo</label>
+                <input type="file"
+                       name="Photo"
+                       class="form-control"
+                       accept=".jpg,.jpeg,.png" />
             </div>
 
             <div class="form-group mb-2">
@@ -51,12 +64,16 @@
 
             <div class="form-group mb-2">
                 <label asp-for="DeptId">Department ID</label>
-                <input asp-for="DeptId" type="number" class="form-control" />
+                <input asp-for="DeptId"
+                       type="number"
+                       class="form-control" />
             </div>
 
             <div class="form-group mb-2">
                 <label asp-for="SeniorityOrder"></label>
-                <input asp-for="SeniorityOrder" type="number" class="form-control" />
+                <input asp-for="SeniorityOrder"
+                       type="number"
+                       class="form-control" />
             </div>
 
             <div class="form-group mb-3">

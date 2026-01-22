@@ -6,44 +6,44 @@
 
 <h2>Faculty Details</h2>
 
-<div class="card card-primary">
-    <div class="card-header">
-        <h3 class="card-title">Basic Information</h3>
-    </div>
-
+<div class="card">
     <div class="card-body">
-        <table class="table table-bordered">
-            <tr>
-                <th width="30%">Name</th>
-                <td>@Model.Name</td>
-            </tr>
-            <tr>
-                <th>Designation</th>
-                <td>@Model.Designation</td>
-            </tr>
-            <tr>
-                <th>Date of Joining</th>
-                <td>
-                    @(Model.DateOfJoining != DateTime.MinValue
-                                        ? Model.DateOfJoining.ToString("dd-MM-yyyy")
-                                        : "-")
-                </td>
-            </tr>
-            <tr>
-                <th>Qualification</th>
-                <td>@Model.Qualification</td>
-            </tr>
-            <tr>
-                <th>Area of Interest</th>
-                <td>@Model.AreaOfInterest</td>
-            </tr>
-            <tr>
-                <th>Teaching Staff</th>
-                <td>@(Model.IsTeaching ? "Yes" : "No")</td>
-            </tr>
-            <tr>
-                <th>Website</th>
-                <td>
+
+        <!-- PHOTO + BASIC INFO -->
+        <div class="row mb-4">
+            <div class="col-md-3 text-center">
+                <img src="@(string.IsNullOrEmpty(Model.ImagePath)
+                                         ? Url.Content("~/images/no-photo.png")
+                                         : Model.ImagePath)"
+                     alt="Faculty Photo"
+                     class="img-thumbnail"
+                     style="height:200px;width:200px;object-fit:cover;" />
+            </div>
+
+            <div class="col-md-9">
+                <h3>@Model.Name</h3>
+                <p><strong>Designation:</strong> @Model.Designation</p>
+                <p><strong>Department ID:</strong> @Model.DeptId</p>
+                <p>
+                    <strong>Date of Joining:</strong>
+                    @Model.DateOfJoining.ToString("dd-MM-yyyy")
+                </p>
+                <p><strong>Teaching Staff:</strong> @(Model.IsTeaching ? "Yes" : "No")</p>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- OTHER DETAILS -->
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Qualification:</strong> @Model.Qualification</p>
+                <p><strong>Area of Interest:</strong> @Model.AreaOfInterest</p>
+            </div>
+
+            <div class="col-md-6">
+                <p>
+                    <strong>Website:</strong>
                     @if (!string.IsNullOrEmpty(Model.Website))
                     {
                         <a href="@Model.Website" target="_blank">@Model.Website</a>
@@ -52,32 +52,24 @@
                     {
                         <span>-</span>
                     }
-                </td>
-            </tr>
-            <tr>
-                <th>Department ID</th>
-                <td>@Model.DeptId</td>
-            </tr>
-            <tr>
-                <th>Seniority Order</th>
-                <td>@Model.SeniorityOrder</td>
-            </tr>
-            <tr>
-                <th>Status</th>
-                <td>
-                    <span class="badge @(Model.IsActive ? "badge-success" : "badge-danger")">
-                        @(Model.IsActive ? "Active" : "Inactive")
-                    </span>
-                </td>
-            </tr>
-        </table>
+                </p>
+                <p><strong>Seniority Order:</strong> @Model.SeniorityOrder</p>
+                <p><strong>Status:</strong> @(Model.IsActive ? "Active" : "Inactive")</p>
+            </div>
+        </div>
+
     </div>
 
+    <!-- ACTION BUTTONS -->
     <div class="card-footer">
-        <a asp-action="Edit" asp-route-id="@Model.FacultyId" class="btn btn-warning">
+        <a asp-action="Edit"
+           asp-route-id="@Model.FacultyId"
+           class="btn btn-primary">
             Edit
         </a>
-        <a asp-action="Index" class="btn btn-secondary">
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
             Back to List
         </a>
     </div>

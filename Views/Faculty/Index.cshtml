@@ -10,6 +10,7 @@
             <th>Name</th>
             <th>Designation</th>
             <th>Joining Date</th>
+            <th>Photo</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -20,6 +21,17 @@
                 <td>@item.Name</td>
                 <td>@item.Designation</td>
                 <td>@item.DateOfJoining.ToShortDateString()</td>
+                <td>
+                    <img src="@(string.IsNullOrEmpty(item.ImagePath)
+                                 ? Url.Content("~/images/no-photo.png")
+                                 : item.ImagePath)"
+                         alt="Faculty Photo"
+                         style="height:50px;width:50px;
+                    object-fit:cover;
+                    border-radius:50%;
+                    border:1px solid #ccc;" />
+                </td>
+
                 <td>
                     <a asp-action="Details" asp-route-id="@item.FacultyId">View</a> |
                     <a asp-action="Edit" asp-route-id="@item.FacultyId">Edit</a> |

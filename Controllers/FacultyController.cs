@@ -2,14 +2,16 @@
 using GECPATAN_FACULTY_PORTAL.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting;
 
 public class FacultyController : Controller
 {
     private readonly ApplicationDbContext _context;
-
-    public FacultyController(ApplicationDbContext context)
+    private readonly IWebHostEnvironment _env;
+    public FacultyController(ApplicationDbContext context,IWebHostEnvironment env)
     {
         _context = context;
+        _env = env;
     }
 
     // LIST
@@ -44,15 +46,42 @@ public class FacultyController : Controller
     // CREATE (POST)
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(Faculty faculty)
+    public async Task<IActionResult> Create(Faculty faculty, IFormFile Photo)
     {
-        Console.WriteLine("CREATE POST HIT");
-
         if (!ModelState.IsValid)
         {
             return View(faculty);
         }
 
+        // 🔹 Handle Faculty Photo Upload
+        if (Photo != null && Photo.Length > 0)
+        {
+            string uploadsFolder = Path.Combine(_env.WebRootPath, "uploads", "faculty");
+
+            // Ensure directory exists
+            if (!Directory.Exists(uploadsFolder))
+            {
+                Directory.CreateDirectory(uploadsFolder);
+            }
+
+            string fileExtension = Path.GetExtension(Photo.FileName);
+            string fileName = Guid.NewGuid().ToString() + fileExtension;
+            string filePath = Path.Combine(uploadsFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await Photo.CopyToAsync(stream);
+            }
+
+            // Save relative path in DB
+            faculty.ImagePath = "/uploads/faculty/" + fileName;
+        }
+        else
+        {
+            faculty.ImagePath = null; // optional, safe
+        }
+
+        // 🔹 Save Faculty
         _context.Faculties.Add(faculty);
         await _context.SaveChangesAsync();
 
@@ -72,13 +101,57 @@ public class FacultyController : Controller
     // EDIT (POST)
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, Faculty faculty)
+    public async Task<IActionResult> Edit(int id, Faculty faculty, IFormFile Photo)
     {
         if (id != faculty.FacultyId)
             return NotFound();
 
         if (!ModelState.IsValid)
             return View(faculty);
+
+        // Get existing record (to preserve old image)
+        var existingFaculty = await _context.Faculties
+            .AsNoTracking()
+            .FirstOrDefaultAsync(f => f.FacultyId == id);
+
+        if (existingFaculty == null)
+            return NotFound();
+
+        // 🔹 Handle Photo Replace
+        if (Photo != null && Photo.Length > 0)
+        {
+            string uploadsFolder = Path.Combine(_env.WebRootPath, "uploads", "faculty");
+            Directory.CreateDirectory(uploadsFolder);
+
+            string fileName = Guid.NewGuid() + Path.GetExtension(Photo.FileName);
+            string filePath = Path.Combine(uploadsFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await Photo.CopyToAsync(stream);
+            }
+
+            // 🔥 Delete old image (optional but recommended)
+            if (!string.IsNullOrEmpty(existingFaculty.ImagePath))
+            {
+                string oldImagePath = Path.Combine(
+                    _env.WebRootPath,
+                    existingFaculty.ImagePath.TrimStart('/')
+                );
+
+                if (System.IO.File.Exists(oldImagePath))
+                {
+                    System.IO.File.Delete(oldImagePath);
+                }
+            }
+
+            faculty.ImagePath = "/uploads/faculty/" + fileName;
+        }
+        else
+        {
+            // Keep old image
+            faculty.ImagePath = existingFaculty.ImagePath;
+        }
 
         _context.Update(faculty);
         await _context.SaveChangesAsync();
