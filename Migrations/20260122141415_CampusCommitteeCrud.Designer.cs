@@ -4,6 +4,7 @@ using GECPATAN_FACULTY_PORTAL.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GECPATAN_FACULTY_PORTAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260122141415_CampusCommitteeCrud")]
+    partial class CampusCommitteeCrud
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,30 +33,12 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
-
                     b.Property<int>("CommitteeId")
                         .HasColumnType("int");
 
                     b.Property<string>("CommitteeTitle")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
@@ -73,15 +58,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     b.Property<int>("AdditionalMemberId")
                         .HasColumnType("int");
 
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
                     b.Property<string>("Department")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -94,9 +70,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -104,12 +77,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     b.Property<string>("Position")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
@@ -127,64 +94,58 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("About")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
-
                     b.Property<string>("BlogLink")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("BulletPointsImg")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Link")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Measure_Image")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Measures")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PageFlyer")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("ShowDocument")
                         .HasColumnType("bit");
 
                     b.Property<string>("SubObjImg")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TableView")
                         .HasColumnType("bit");
 
                     b.Property<string>("Tagline")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TitleImage")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TitleImageCSSClass")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
@@ -199,17 +160,8 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
-
                     b.Property<int>("CommitteeId")
                         .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
 
                     b.Property<string>("Department")
                         .IsRequired()
@@ -223,9 +175,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -234,12 +183,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
-
                     b.HasKey("Id");
 
                     b.HasIndex("CommitteeId");
@@ -247,7 +190,7 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     b.ToTable("CommitteeMembers");
                 });
 
-            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.CommitteeMission", b =>
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.CommitteeVisionMissionObjective", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -255,168 +198,22 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("CampusCommitteeId")
-                        .HasColumnType("int");
-
                     b.Property<int>("CommitteeId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("MissionText")
+                    b.Property<string>("Content")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CampusCommitteeId");
-
-                    b.ToTable("CommitteeMissions");
-                });
-
-            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.CommitteeObjective", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("CampusCommitteeId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CommitteeId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("ObjectiveText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CampusCommitteeId");
-
-                    b.ToTable("CommitteeObjectives");
-                });
-
-            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.CommitteeSubObjective", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("CampusCommitteeId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CommitteeId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("SubObjectiveText")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CampusCommitteeId");
-
-                    b.ToTable("CommitteeSubObjectives");
-                });
-
-            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.CommitteeVision", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("CampusCommitteeId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CommitteeId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("CreatedDateInt")
-                        .HasColumnType("bigint");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long?>("UpdatedDateInt")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("VisionText")
+                    b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CampusCommitteeId");
+                    b.HasIndex("CommitteeId");
 
-                    b.ToTable("CommitteeVisions");
+                    b.ToTable("CommitteeVisionMissionObjectives");
                 });
 
             modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.EducationalQualification", b =>
@@ -426,9 +223,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EducationalQualificationId"));
-
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -481,9 +275,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     b.Property<string>("AreaOfInterest")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -545,9 +336,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PersonalDetailId"));
 
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Contact")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -594,9 +382,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProfessionalExperienceId"));
 
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
@@ -642,9 +427,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PublicationId"));
 
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
@@ -684,9 +466,6 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TrainingAndWorkshopId"));
-
-                    b.Property<int>("BaseId")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -964,32 +743,15 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
                     b.Navigation("Committee");
                 });
 
-            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.CommitteeMission", b =>
+            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.CommitteeVisionMissionObjective", b =>
                 {
-                    b.HasOne("GECPATAN_FACULTY_PORTAL.Models.CampusCommittee", null)
-                        .WithMany("Missions")
-                        .HasForeignKey("CampusCommitteeId");
-                });
+                    b.HasOne("GECPATAN_FACULTY_PORTAL.Models.CampusCommittee", "Committee")
+                        .WithMany("VisionMissionObjectives")
+                        .HasForeignKey("CommitteeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.CommitteeObjective", b =>
-                {
-                    b.HasOne("GECPATAN_FACULTY_PORTAL.Models.CampusCommittee", null)
-                        .WithMany("Objectives")
-                        .HasForeignKey("CampusCommitteeId");
-                });
-
-            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.CommitteeSubObjective", b =>
-                {
-                    b.HasOne("GECPATAN_FACULTY_PORTAL.Models.CampusCommittee", null)
-                        .WithMany("SubObjectives")
-                        .HasForeignKey("CampusCommitteeId");
-                });
-
-            modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.CommitteeVision", b =>
-                {
-                    b.HasOne("GECPATAN_FACULTY_PORTAL.Models.CampusCommittee", null)
-                        .WithMany("Visions")
-                        .HasForeignKey("CampusCommitteeId");
+                    b.Navigation("Committee");
                 });
 
             modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.EducationalQualification", b =>
@@ -1109,13 +871,7 @@ namespace GECPATAN_FACULTY_PORTAL.Migrations
 
                     b.Navigation("Members");
 
-                    b.Navigation("Missions");
-
-                    b.Navigation("Objectives");
-
-                    b.Navigation("SubObjectives");
-
-                    b.Navigation("Visions");
+                    b.Navigation("VisionMissionObjectives");
                 });
 
             modelBuilder.Entity("GECPATAN_FACULTY_PORTAL.Models.Faculty", b =>
