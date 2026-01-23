@@ -324,5 +324,81 @@ public class CampusCommitteesController : Controller
         return RedirectToAction(nameof(ManageObjective),
             new { committeeId = objective.CommitteeId });
     }
+    public async Task<IActionResult> ManageSubObjective(int committeeId)
+    {
+        ViewBag.CommitteeId = committeeId;
+
+        var subObjectives = await _context.CommitteeSubObjectives
+            .Where(s => s.CommitteeId == committeeId && !s.IsDeleted)
+            .OrderBy(s => s.Id)
+            .ToListAsync();
+
+        return View(subObjectives);
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> AddSubObjective(CommitteeSubObjective model)
+    {
+        if (ModelState.IsValid)
+        {
+            model.IsDeleted = false;
+            model.CreatedDate = DateTime.Now;
+            model.CreatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
+
+            _context.CommitteeSubObjectives.Add(model);
+            await _context.SaveChangesAsync();
+        }
+
+        return RedirectToAction(nameof(ManageSubObjective),
+            new { committeeId = model.CommitteeId });
+    }
+    public async Task<IActionResult> EditSubObjective(int id)
+    {
+        var subObjective = await _context.CommitteeSubObjectives
+            .FirstOrDefaultAsync(s => s.Id == id && !s.IsDeleted);
+
+        if (subObjective == null)
+            return NotFound();
+
+        return View(subObjective);
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> EditSubObjective(CommitteeSubObjective model)
+    {
+        var subObjectiveInDb = await _context.CommitteeSubObjectives
+            .FirstOrDefaultAsync(s => s.Id == model.Id && !s.IsDeleted);
+
+        if (subObjectiveInDb == null)
+            return NotFound();
+
+        subObjectiveInDb.SubObjectiveText = model.SubObjectiveText;
+        subObjectiveInDb.UpdatedDate = DateTime.Now;
+        subObjectiveInDb.UpdatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
+
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(ManageSubObjective),
+            new { committeeId = subObjectiveInDb.CommitteeId });
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteSubObjective(int id)
+    {
+        var subObjective = await _context.CommitteeSubObjectives
+            .FirstOrDefaultAsync(s => s.Id == id && !s.IsDeleted);
+
+        if (subObjective == null)
+            return NotFound();
+
+        subObjective.IsDeleted = true;
+        subObjective.UpdatedDate = DateTime.Now;
+        subObjective.UpdatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
+
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(ManageSubObjective),
+            new { committeeId = subObjective.CommitteeId });
+    }
 
 }

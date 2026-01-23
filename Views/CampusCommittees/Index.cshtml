@@ -42,6 +42,11 @@
                        class="btn btn-sm btn-outline-primary">
                         Objectives
                     </a>
+                    <a asp-action="ManageSubObjective"
+                       asp-route-committeeId="@item.Id"
+                       class="btn btn-sm btn-outline-primary">
+                        Sub-Objectives
+                    </a>
                     <form asp-action="Delete"
                           asp-route-committeeid="@item.Id"
                           method="post"

@@ -1,0 +1,77 @@
+﻿@model List<GECPATAN_FACULTY_PORTAL.Models.CommitteeSubObjective>
+
+@{
+    ViewData["Title"] = "Manage Sub-Objectives";
+    int committeeId = (int)ViewBag.CommitteeId;
+}
+
+<h4>Manage Sub-Objectives</h4>
+<hr />
+
+<!-- ADD SUB-OBJECTIVE -->
+<form asp-action="AddSubObjective" method="post" class="mb-4">
+    <input type="hidden" name="CommitteeId" value="@committeeId" />
+
+    <div class="form-group">
+        <label>Sub-Objective</label>
+        <textarea name="SubObjectiveText"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Enter sub-objective"
+                  required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">
+        Add Sub-Objective
+    </button>
+</form>
+
+<hr />
+
+<!-- LIST SUB-OBJECTIVES -->
+@if (Model.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sub-Objective</th>
+                <th style="width:160px;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.SubObjectiveText</td>
+                    <td>
+                        <a asp-action="EditSubObjective"
+                           asp-route-id="@item.Id"
+                           class="btn btn-sm btn-warning">
+                            Edit
+                        </a>
+
+                        <form asp-action="DeleteSubObjective"
+                              method="post"
+                              style="display:inline;">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit"
+                                    class="btn btn-sm btn-danger"
+                                    onclick="return confirm('Delete this sub-objective?');">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No sub-objectives added yet.</p>
+}
+
+<a asp-action="Index"
+   class="btn btn-secondary mt-3">
+    Back to Committees
+</a>
