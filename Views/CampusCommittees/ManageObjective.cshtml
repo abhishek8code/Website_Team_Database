@@ -1,0 +1,77 @@
+﻿@model List<GECPATAN_FACULTY_PORTAL.Models.CommitteeObjective>
+
+@{
+    ViewData["Title"] = "Manage Objectives";
+    int committeeId = (int)ViewBag.CommitteeId;
+}
+
+<h4>Manage Committee Objectives</h4>
+<hr />
+
+<!-- ADD OBJECTIVE -->
+<form asp-action="AddObjectives" method="post" class="mb-4">
+    <input type="hidden" name="CommitteeId" value="@committeeId" />
+
+    <div class="form-group">
+        <label>Objective</label>
+        <textarea name="ObjectiveText"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Enter objective"
+                  required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">
+        Add Objective
+    </button>
+</form>
+
+<hr />
+
+<!-- LIST OBJECTIVES -->
+@if (Model.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Objective</th>
+                <th style="width:160px;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ObjectiveText</td>
+                    <td>
+                        <a asp-action="EditObjectives"
+                           asp-route-id="@item.Id"
+                           class="btn btn-sm btn-warning">
+                            Edit
+                        </a>
+
+                        <form asp-action="DeleteObjective"
+                              method="post"
+                              style="display:inline;">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit"
+                                    class="btn btn-sm btn-danger"
+                                    onclick="return confirm('Delete this objective?');">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No objectives added yet.</p>
+}
+
+<a asp-action="Index"
+   class="btn btn-secondary mt-3">
+    Back to Committees
+</a>

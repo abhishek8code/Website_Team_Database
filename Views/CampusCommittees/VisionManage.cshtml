@@ -1,0 +1,37 @@
+﻿@model GECPATAN_FACULTY_PORTAL.Models.CommitteeVision
+
+<h4>Manage Committee Vision</h4>
+<hr />
+
+<form asp-action="ManageVision" method="post">
+
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="CommitteeId" />
+
+    <div class="form-group">
+        <label asp-for="VisionText"></label>
+        <textarea asp-for="VisionText"
+                  class="form-control"
+                  rows="6">
+        </textarea>
+        <span asp-validation-for="VisionText" class="text-danger"></span>
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-success">
+            Save Vision
+        </button>
+
+        <a asp-action="Vision"
+           asp-route-id="@Model.CommitteeId"
+           class="btn btn-secondary ms-2">
+            Cancel
+        </a>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

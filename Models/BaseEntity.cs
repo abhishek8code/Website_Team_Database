@@ -2,6 +2,7 @@
 {
     public abstract class BaseEntity
     {
+        public int BaseId { get; set; }
         public bool IsDeleted { get; set; } = false;
 
         public DateTime CreatedDate { get; set; }

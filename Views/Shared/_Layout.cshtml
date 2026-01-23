@@ -184,13 +184,27 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <p>Home</p>
                                     </a>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a href="@Url.Action("Index", "FacultyMembers")" class="nav-link">
+                                    <a href="@Url.Action("Index", "Faculty")" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Faculty List</p>
                                     </a>
                                 </li>
                             </ul>
+                            <ul class="nav flex-column sidebar-menu">
+
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                       asp-controller="CampusCommittees"
+                                       asp-action="Index">
+                                        <i class="fa fa-users"></i>
+                                        <span>Campus Committees</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+
                         <ul class="nav-item">
                             <a asp-controller="Faculty" asp-action="Index" class="nav-link">
                                 <i class="nav-icon fas fa-chalkboard-teacher"></i>

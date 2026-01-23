@@ -1,0 +1,75 @@
+﻿@model List<GECPATAN_FACULTY_PORTAL.Models.CommitteeMission>
+
+@{
+    ViewData["Title"] = "Manage Mission";
+    var committeeId = (int)ViewBag.CommitteeId;
+}
+
+<h4>Manage Committee Mission</h4>
+<hr />
+
+<!-- ADD MISSION -->
+<form asp-action="AddMission" method="post" class="mb-4">
+    <input type="hidden" name="CommitteeId" value="@committeeId" />
+
+    <div class="form-group">
+        <label>Mission Text</label>
+        <textarea name="MissionText"
+                  class="form-control"
+                  rows="3"
+                  required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">
+        Add Mission
+    </button>
+</form>
+
+<hr />
+
+<!-- LIST MISSIONS -->
+@if (Model.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Mission</th>
+                <th style="width:150px;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MissionText</td>
+                    <td>
+                        <a asp-action="EditMission"
+                           asp-route-id="@item.Id"
+                           class="btn btn-sm btn-warning">
+                            Edit
+                        </a>
+
+                        <form asp-action="DeleteMission"
+                              method="post"
+                              style="display:inline;">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit"
+                                    class="btn btn-sm btn-danger"
+                                    onclick="return confirm('Delete this mission?');">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No mission added yet.</p>
+}
+
+<a asp-action="Index" class="btn btn-secondary mt-3">
+    Back to Committees
+</a>

@@ -1,0 +1,57 @@
+﻿@model GECPATAN_FACULTY_PORTAL.Models.CampusCommittee
+
+<h2 class="mb-3">@Model.Title</h2>
+
+@if (!string.IsNullOrEmpty(Model.Tagline))
+{
+    <p class="text-muted">
+        <em>@Model.Tagline</em>
+    </p>
+}
+
+<hr />
+
+<!-- ABOUT SECTION (RICH TEXT OUTPUT) -->
+@if (!string.IsNullOrEmpty(Model.About))
+{
+    <h4>About</h4>
+    <div class="border rounded p-3 mb-4">
+        @Model.About
+    </div>
+}
+
+<!-- OPTIONAL FIELDS (DISPLAY ONLY IF PRESENT) -->
+@if (!string.IsNullOrEmpty(Model.Measures))
+{
+    <h4>Measures</h4>
+    <p>@Model.Measures</p>
+}
+
+@if (!string.IsNullOrEmpty(Model.Link))
+{
+    <p>
+        <strong>Link:</strong>
+        <a href="@Model.Link" target="_blank">@Model.Link</a>
+    </p>
+}
+
+<hr />
+
+<!-- ACTION BUTTONS -->
+<div class="mt-3">
+    <a asp-action="Edit"
+       asp-route-id="@Model.Id"
+       class="btn btn-warning">
+        Edit
+    </a>
+
+    <a asp-action="Index"
+       class="btn btn-secondary">
+        Back
+    </a>
+    <a asp-action="ManageVision"
+       asp-route-id="@Model.Id"
+       class="btn btn-outline-primary btn-sm">
+        Manage Vision
+    </a>
+</div>

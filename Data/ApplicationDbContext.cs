@@ -18,6 +18,18 @@ namespace GECPATAN_FACULTY_PORTAL.Data
         public DbSet<TrainingAndWorkshop> TrainingAndWorkshops { get; set; }
         public DbSet<Publication> Publications { get; set; }
 
+
+        public DbSet<CampusCommittee> CampusCommittees { get; set; }
+
+        public DbSet<CommitteeVision> CommitteeVisions { get; set; }
+        public DbSet<CommitteeMission> CommitteeMissions { get; set; }
+        public DbSet<CommitteeObjective> CommitteeObjectives { get; set; }
+        public DbSet<CommitteeSubObjective> CommitteeSubObjectives { get; set; }
+        public DbSet<CommitteeMember> CommitteeMembers { get; set; }
+        public DbSet<AdditionalMember> AdditionalMembers { get; set; }
+        public DbSet<AdditionalMemberDetail> AdditionalMemberDetails { get; set; }
+
+
         // 🔥 GLOBAL SOFT DELETE FILTER
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
