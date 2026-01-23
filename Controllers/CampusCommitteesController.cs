@@ -2,6 +2,7 @@
 using GECPATAN_FACULTY_PORTAL.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 public class CampusCommitteesController : Controller
 {
@@ -167,6 +168,83 @@ public class CampusCommitteesController : Controller
         await _context.SaveChangesAsync();
 
         return RedirectToAction(nameof(Vision), new { id = model.CommitteeId });
+    }
+    public async Task<IActionResult> ManageMission(int committeeId)
+    {
+        ViewBag.CommitteeId = committeeId;
+
+        var missions = await _context.CommitteeMissions
+            .Where(m => m.CommitteeId == committeeId)
+            .OrderBy(m => m.Id)
+            .ToListAsync();
+
+        return View(missions);
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> AddMission(CommitteeMission model)
+    {
+        if (ModelState.IsValid)
+        {
+            model.IsDeleted = false;
+
+            model.CreatedDate = DateTime.Now;
+            model.CreatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
+
+            _context.CommitteeMissions.Add(model);
+            await _context.SaveChangesAsync();
+        }
+
+        return RedirectToAction(nameof(ManageMission),
+            new { committeeId = model.CommitteeId });
+    }
+    public async Task<IActionResult> EditMission(int id)
+    {
+        var mission = await _context.CommitteeMissions.FindAsync(id);
+        if (mission == null)
+            return NotFound();
+
+        return View(mission);
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> EditMission(CommitteeMission model)
+    {
+        var missionInDb = await _context.CommitteeMissions
+            .FirstOrDefaultAsync(m => m.Id == model.Id);
+
+        if (missionInDb == null)
+            return NotFound();
+
+        missionInDb.MissionText = model.MissionText;
+
+        missionInDb.UpdatedDate = DateTime.Now;
+        missionInDb.UpdatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
+
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(ManageMission),
+            new { committeeId = missionInDb.CommitteeId });
+    }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteMission(int id)
+    {
+        var mission = await _context.CommitteeMissions.FindAsync(id);
+        if (mission == null)
+            return NotFound();
+
+        int committeeId = mission.CommitteeId;
+        // SOFT DELETE
+        mission.IsDeleted = true;
+
+        mission.UpdatedDate = DateTime.Now;
+        mission.UpdatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
+        _context.CommitteeMissions.Remove(mission);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(ManageMission),
+            new { committeeId });
     }
 
 }

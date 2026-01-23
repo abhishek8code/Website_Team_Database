@@ -32,7 +32,11 @@
                        class="btn btn-sm btn-outline-primary">
                         Vision
                     </a>
-
+                    <a asp-action="ManageMission"
+                       asp-route-committeeId="@item.Id"
+                       class="btn btn-sm btn-outline-primary">
+                        Manage Mission
+                    </a>
                     <form asp-action="Delete"
                           asp-route-committeeid="@item.Id"
                           method="post"
