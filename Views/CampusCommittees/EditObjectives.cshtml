@@ -1,0 +1,40 @@
+﻿@model GECPATAN_FACULTY_PORTAL.Models.CommitteeObjective
+
+@{
+    ViewData["Title"] = "Edit Objective";
+}
+
+<h4>Edit Committee Objective</h4>
+<hr />
+
+<form asp-action="EditObjectives" method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="CommitteeId" />
+
+    <div class="form-group">
+        <label asp-for="ObjectiveText"></label>
+        <textarea asp-for="ObjectiveText"
+                  class="form-control"
+                  rows="4"></textarea>
+        <span asp-validation-for="ObjectiveText"
+              class="text-danger"></span>
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-success">
+            Update Objective
+        </button>
+
+        <a asp-action="ManageObjective"
+           asp-route-committeeId="@Model.CommitteeId"
+           class="btn btn-secondary ms-2">
+            Cancel
+        </a>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

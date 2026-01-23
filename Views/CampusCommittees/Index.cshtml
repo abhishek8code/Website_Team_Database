@@ -35,7 +35,12 @@
                     <a asp-action="ManageMission"
                        asp-route-committeeId="@item.Id"
                        class="btn btn-sm btn-outline-primary">
-                        Manage Mission
+                        Mission
+                    </a>
+                    <a asp-action="ManageObjective"
+                       asp-route-committeeId="@item.Id"
+                       class="btn btn-sm btn-outline-primary">
+                        Objectives
                     </a>
                     <form asp-action="Delete"
                           asp-route-committeeid="@item.Id"
