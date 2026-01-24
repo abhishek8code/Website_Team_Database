@@ -35,24 +35,40 @@ namespace GECPATAN_FACULTY_PORTAL.Data
         public DbSet<DepartmentPEO> DepartmentPEOs { get; set; }
         public DbSet<DepartmentPSO> DepartmentPSOs { get; set; }
         public DbSet<DepartmentIntake> DepartmentIntakes { get; set; }
-        
+
         //GLOBAL SOFT DELETE FILTER
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Faculty>()
-                .HasQueryFilter(x => !x.IsDeleted);
+            // Faculty Module
+            modelBuilder.Entity<Faculty>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<PersonalDetail>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<EducationalQualification>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<ProfessionalExperience>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<TrainingAndWorkshop>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<Publication>().HasQueryFilter(x => !x.IsDeleted);
 
-            modelBuilder.Entity<ProfessionalExperience>()
-                .HasQueryFilter(x => !x.IsDeleted);
+            // Campus Committee Module
+            modelBuilder.Entity<CampusCommittee>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<CommitteeVision>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<CommitteeMission>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<CommitteeObjective>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<CommitteeSubObjective>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<CommitteeMember>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<AdditionalMember>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<AdditionalMemberDetail>().HasQueryFilter(x => !x.IsDeleted);
 
-            modelBuilder.Entity<TrainingAndWorkshop>()
-                .HasQueryFilter(x => !x.IsDeleted);
-
-            modelBuilder.Entity<Publication>()
-                .HasQueryFilter(x => !x.IsDeleted);
+            // Department Module
+            modelBuilder.Entity<Departments>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<Lab>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<DepartmentVision>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<DepartmentMission>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<DepartmentPEO>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<DepartmentPSO>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<DepartmentIntake>().HasQueryFilter(x => !x.IsDeleted);
         }
+
 
         public override int SaveChanges()
         {
