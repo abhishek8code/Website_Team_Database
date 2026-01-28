@@ -10,7 +10,7 @@ namespace GECPATAN_FACULTY_PORTAL.Data
             : base(options)
         {
         }
-
+        //Faculty Module
         public DbSet<Faculty> Faculties { get; set; }
         public DbSet<PersonalDetail> PersonalDetails { get; set; }
         public DbSet<EducationalQualification> EducationalQualifications { get; set; }
@@ -18,7 +18,7 @@ namespace GECPATAN_FACULTY_PORTAL.Data
         public DbSet<TrainingAndWorkshop> TrainingAndWorkshops { get; set; }
         public DbSet<Publication> Publications { get; set; }
 
-
+        //Campus Committee Module
         public DbSet<CampusCommittee> CampusCommittees { get; set; }
 
         public DbSet<CommitteeVision> CommitteeVisions { get; set; }
@@ -28,6 +28,7 @@ namespace GECPATAN_FACULTY_PORTAL.Data
         public DbSet<CommitteeMember> CommitteeMembers { get; set; }
         public DbSet<AdditionalMember> AdditionalMembers { get; set; }
         public DbSet<AdditionalMemberDetail> AdditionalMemberDetails { get; set; }
+        //Department Module
         public DbSet<Departments> Departments { get; set; }
         public DbSet<Lab> Labs { get; set; }
         public DbSet<DepartmentVision> DepartmentVisions { get; set; }

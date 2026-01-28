@@ -1,0 +1,56 @@
+﻿@model GECPATAN_FACULTY_PORTAL.Models.Departments
+
+@{
+    ViewData["Title"] = "Create Department";
+}
+
+<h2>Create Department</h2>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Upload Image</label>
+        <input type="file" name="ImageFile" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Slogan" class="control-label"></label>
+        <input asp-for="Slogan" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Tagline" class="control-label"></label>
+        <input asp-for="Tagline" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TitleImage" class="control-label"></label>
+        <input asp-for="TitleImage" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="About" class="control-label"></label>
+        <textarea asp-for="About" class="form-control" rows="4"></textarea>
+    </div>
+
+    <div class="form-check">
+        <input asp-for="ShowIntake" class="form-check-input" />
+        <label asp-for="ShowIntake" class="form-check-label"></label>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

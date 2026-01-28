@@ -1,0 +1,64 @@
+﻿@model IEnumerable<GECPATAN_FACULTY_PORTAL.Models.Departments>
+
+@{
+    ViewData["Title"] = "Department List";
+}
+
+<h2>Department List</h2>
+
+<p><a asp-action="Create" class="btn btn-primary">Create New</a></p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Slogan</th>
+            <th>Image</th>
+            <th>Tagline</th>
+            <th>About</th>
+            <th>Show Intake</th>
+            <th>Actions</th>
+            <th>Other Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Slogan</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.Image))
+                    {
+                        <img src="~/@item.Image" alt="Department Image" style="max-width: 100px; max-height: 60px;" />
+                    }
+                    else
+                    {
+                        <span class="text-muted">No Image</span>
+                    }
+                </td>
+                <td>@item.Tagline</td>
+                <td>@Html.Raw(item.About)</td>
+                <td>@item.ShowIntake</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+
+                <td>
+                    <a asp-action="DepartmentPeo" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-primary mb-1">View PEOs</a><br />
+                    <a asp-action="DepartmentPsos" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-dark mb-1">View PSOs</a><br />
+                    <a asp-action="DepartmentLab" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-success">View Labs</a>
+                    <a asp-action="DepartmentIntakes" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-primary">View Intakes</a>
+                    <a asp-action="ViewVision" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-secondary">View Vision</a>
+                    <a asp-action="DepartmentMissions" asp-route-departmentId="@item.Id" class="btn btn-sm btn-outline-info">View Mission</a>
+
+                </td>
+
+
+            </tr>
+        }
+    </tbody>
+</table>
