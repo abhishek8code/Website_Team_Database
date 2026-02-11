@@ -1,0 +1,35 @@
+﻿@model GECPATAN_FACULTY_PORTAL.Models.DepartmentVision
+
+@{
+    ViewData["Title"] = "Department Vision";
+}
+
+<h2 class="mb-3">Department Vision</h2>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        @if (!string.IsNullOrWhiteSpace(Model.VisionText))
+        {
+            <p class="fs-5">
+                @Html.Raw(Model.VisionText)
+            </p>
+        }
+        else
+        {
+            <p class="text-muted">Vision not added yet.</p>
+        }
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="ManageVision"
+       asp-route-deptId="@Model.Dept_ID"
+       class="btn btn-primary">
+        Edit Vision
+    </a>
+
+    <a asp-action="Index"
+       class="btn btn-secondary ms-2">
+        Back to Department List
+    </a>
+</div>

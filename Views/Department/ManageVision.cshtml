@@ -1,0 +1,48 @@
+﻿@model GECPATAN_FACULTY_PORTAL.Models.DepartmentVision
+
+@{
+    ViewData["Title"] = "Manage Department Vision";
+}
+
+<h2 class="mb-3">
+    @(Model.Id == 0 ? "Add Department Vision" : "Edit Department Vision")
+</h2>
+
+<form asp-action="ManageVision" method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="Dept_ID" />
+
+    <div class="mb-3">
+        <label asp-for="VisionText" class="form-label fw-bold">
+            Vision
+        </label>
+
+        <textarea asp-for="VisionText"
+                  class="form-control"
+                  rows="6"
+                  placeholder="Enter department vision here..."></textarea>
+
+        <span asp-validation-for="VisionText"
+              class="text-danger"></span>
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-success">
+            Save Vision
+        </button>
+
+        <a asp-action="Vision"
+           asp-route-deptId="@Model.Dept_ID"
+           class="btn btn-secondary ms-2">
+            Cancel
+        </a>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
