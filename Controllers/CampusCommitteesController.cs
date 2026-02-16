@@ -120,7 +120,7 @@ public class CampusCommitteesController : Controller
     {
         var vision = await _context.CommitteeVisions
             .FirstOrDefaultAsync(v => v.CommitteeId == committeeId);
-
+        
         if (vision == null)
         {
             return View("VisionManage", new CommitteeVision
@@ -174,7 +174,7 @@ public class CampusCommitteesController : Controller
         ViewBag.CommitteeId = committeeId;
 
         var missions = await _context.CommitteeMissions
-            .Where(m => m.CommitteeId == committeeId)
+            .Where(m => m.CommitteeId == committeeId && !m.IsDeleted)
             .OrderBy(m => m.Id)
             .ToListAsync();
 

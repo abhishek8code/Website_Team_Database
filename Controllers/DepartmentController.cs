@@ -90,65 +90,159 @@ namespace GECPATAN_FACULTY_PORTAL.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-        public async Task<IActionResult> Vision(int deptId)
+        // ======================
+        // MANAGE VISION (GET)
+        // ======================
+
+        public async Task<IActionResult> ManageVision(int departmentId)
         {
             var vision = await _context.DepartmentVisions
-                .FirstOrDefaultAsync(v => v.Dept_ID == deptId && !v.IsDeleted);
+                .FirstOrDefaultAsync(v => v.Dept_ID == departmentId);
 
+            // If not exists → create empty model for add
+            vision ??= new DepartmentVision
+            {
+                Dept_ID = departmentId
+            };
+
+            return View("ManageVision", vision);
+        }
+
+
+        // ======================
+        // VIEW VISION DETAILS
+        // ======================
+
+        public async Task<IActionResult> Vision(int id)
+        {
+            var vision = await _context.DepartmentVisions
+                .FirstOrDefaultAsync(v => v.Dept_ID == id);
+
+            // If no vision exists → redirect to manage page
             if (vision == null)
             {
-                // No vision yet → redirect to add/edit page
-                return RedirectToAction(nameof(ManageVision), new { deptId });
+                return RedirectToAction(nameof(ManageVision),
+                    new { departmentId = id });
             }
 
             return View("VisionDetails", vision);
         }
-        public async Task<IActionResult> ManageVision(int deptId)
-        {
-            var vision = await _context.DepartmentVisions
-                .FirstOrDefaultAsync(v => v.Dept_ID == deptId && !v.IsDeleted);
 
-            if (vision == null)
-            {
-                vision = new DepartmentVision
-                {
-                    Dept_ID = deptId
-                };
-            }
 
-            return View(vision);
-        }
+        // ======================
+        // ADD / UPDATE VISION (POST)
+        // ======================
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ManageVision(DepartmentVision model)
         {
             if (!ModelState.IsValid)
-                return View(model);
+            {
+                return View("ManageVision", model);
+            }
 
             var visionInDb = await _context.DepartmentVisions
-                .FirstOrDefaultAsync(v => v.Dept_ID == model.Dept_ID && !v.IsDeleted);
+                .FirstOrDefaultAsync(v => v.Dept_ID == model.Dept_ID);
 
             if (visionInDb == null)
             {
-                // ADD
-                model.IsDeleted = false;
-                model.CreatedDate = DateTime.Now;
-                model.CreatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
-
+                // ADD NEW
                 _context.DepartmentVisions.Add(model);
             }
             else
             {
-                // EDIT
+                // UPDATE EXISTING
                 visionInDb.VisionText = model.VisionText;
-                visionInDb.UpdatedDate = DateTime.Now;
-                visionInDb.UpdatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
             }
 
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Vision), new { deptId = model.Dept_ID });
+            return RedirectToAction(nameof(Vision),
+                new { id = model.Dept_ID });
         }
 
+
+        // ======================
+        // MANAGE MISSION (GET)
+        // ======================
+
+        public async Task<IActionResult> ManageMission(int departmentId)
+        {
+            ViewBag.DepartmentId = departmentId;
+
+            var missions = await _context.DepartmentMissions
+                .Where(m => m.Dept_ID == departmentId &&!m.IsDeleted)
+                .OrderBy(m => m.Id)
+                .ToListAsync();
+
+            return View(missions);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddMission(DepartmentMission model)
+        {
+            if (ModelState.IsValid)
+            {
+                model.IsDeleted = false;
+
+                model.CreatedDate = DateTime.Now;
+                model.CreatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
+
+                _context.DepartmentMissions.Add(model);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(ManageMission),
+                new { Id = model.Dept_ID });
+        }
+        public async Task<IActionResult> EditMission(int id)
+        {
+            var mission = await _context.DepartmentMissions.FindAsync(id);
+            if (mission == null)
+                return NotFound();
+
+            return View(mission);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditMission(DepartmentMission model)
+        {
+            var missionInDb = await _context.DepartmentMissions
+                .FirstOrDefaultAsync(m => m.Id == model.Id);
+
+            if (missionInDb == null)
+                return NotFound();
+
+            missionInDb.MissionText = model.MissionText;
+
+            missionInDb.UpdatedDate = DateTime.Now;
+            missionInDb.UpdatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(ManageMission),
+                new { deptId = missionInDb.Dept_ID });
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteMission(int id)
+        {
+            var mission = await _context.DepartmentMissions.FindAsync(id);
+            if (mission == null)
+                return NotFound();
+
+            int deptId = mission.Dept_ID;
+            // SOFT DELETE
+            mission.IsDeleted = true;
+
+            mission.UpdatedDate = DateTime.Now;
+            mission.UpdatedDateInt = DateTimeOffset.Now.ToUnixTimeSeconds();
+            _context.DepartmentMissions.Remove(mission);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(ManageMission),
+                new { deptId });
+        }
     }
 }
