@@ -1,52 +1,48 @@
 ﻿@model GECPATAN_FACULTY_PORTAL.Models.Departments
-
 @{
-    ViewData["Title"] = "Create Department";
+    ViewData["Title"] = "Edit Department";
 }
+<h2>Edit Department</h2>
 
-<h2>Create Department</h2>
-
-<form asp-action="Create" method="post" enctype="multipart/form-data">
+<form asp-action="Edit" method="post">
     @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
 
-    <div class="form-group">
-        <label asp-for="Name" class="control-label"></label>
+    <div class="mb-3">
+        <label class="form-label">Name</label>
         <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label>Upload Image</label>
-        <input type="file" name="ImageFile" class="form-control" />
+        <input type="file" name="Image" class="form-control" />
     </div>
 
-    <div class="form-group">
-        <label asp-for="Slogan" class="control-label"></label>
-        <input asp-for="Slogan" class="form-control" />
-    </div>
 
-    <div class="form-group">
-        <label asp-for="Tagline" class="control-label"></label>
+    <div class="mb-3">
+        <label class="form-label">Tagline</label>
         <input asp-for="Tagline" class="form-control" />
     </div>
 
-    <div class="form-group">
-        <label asp-for="TitleImage" class="control-label"></label>
-        <input asp-for="TitleImage" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="About" class="control-label"></label>
+    <div class="mb-3">
+        <label class="form-label">About</label>
         <textarea asp-for="About" class="form-control" rows="4"></textarea>
     </div>
 
-    <div class="form-check">
-        <input asp-for="ShowIntake" class="form-check-input" />
-        <label asp-for="ShowIntake" class="form-check-label"></label>
+    <div class="mb-3">
+        <label class="form-label">Title Image</label>
+        <input asp-for="TitleImage" class="form-control" />
     </div>
-    <br />
-    <button type="submit" class="btn btn-primary">Create</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    @* <div class="form-check mb-3">
+        <input asp-for="TableView" class="form-check-input" />
+        <label class="form-check-label">Table View</label>
+    </div> *@
+    <div class="mb-3">
+            <label class="form-label">Show Intake</label>
+            <input asp-for="ShowIntake" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Update</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
 </form>
 
 @section Scripts {
